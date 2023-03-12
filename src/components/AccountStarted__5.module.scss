@@ -1,0 +1,58 @@
+@use "utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$padding_type_0: 50px 0px 50px 0px;
+
+.root {
+  @include lg {
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 0px;
+    column-gap: 16px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  column-gap: 24px;
+  background-color: $color_type_0;
+  position: relative;
+  overflow: hidden;
+  min-width: 0px;
+  max-width: 1440px;
+}
+.root__item {
+  @include mq-between(xxl, max) {
+    margin-left: 0px;
+  }
+  @include xxl {
+    margin-left: 0px;
+  }
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - (1 - 1 / 1) * 16px);
+  }
+  flex: 0 0 calc(0.91 / 2 * 100% - (1 - 0.91 / 2) * 24px);
+  @include flex-column;
+  position: relative;
+}
+.box {
+  position: relative;
+  flex-grow: 1;
+}
+.root__item1 {
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - (1 - 1 / 1) * 16px);
+    margin-left: 0px;
+  }
+  flex: 0 0 calc(0.71 / 2 * 100% - (1 - 0.71 / 2) * 24px);
+  margin-left: calc(0.17 / 2 * 100% - (1 - 0.17 / 2) * 24px + 24px);
+  @include flex-column;
+  position: relative;
+}
+.component {
+  @include lg {
+    padding: $padding_type_0;
+  }
+  width: 100%;
+  height: 100%;
+}

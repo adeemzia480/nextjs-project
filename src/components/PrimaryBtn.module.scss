@@ -1,0 +1,34 @@
+@use "utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+$color_type_1: rgb(5, 105, 239);
+
+$padding_type_0: 0px;
+$padding_type_1: 5px 10p;
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.btn {
+  @include flex-column;
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_0;
+  height: 47px;
+  cursor: pointer;
+  box-shadow: 5px 4px 8px 0px rgba(0, 49, 115, 0.247);
+  padding: $padding_type_1;
+  position: relative;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  padding: $padding_type_0;
+  height: 31px;
+  position: relative;
+  margin: 8px 15px;
+}

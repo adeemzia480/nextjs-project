@@ -1,0 +1,540 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(113, 119, 255);
+$color_type_2: rgb(170, 170, 170);
+$color_type_3: rgb(232, 241, 254);
+$color_type_4: rgb(240, 240, 240);
+$color_type_5: rgb(254, 71, 71);
+$color_type_6: rgb(255, 216, 13);
+$color_type_7: rgb(255, 255, 255);
+$color_type_8: rgb(5, 105, 239);
+$color_type_9: rgb(6, 105, 239);
+$color_type_10: rgba(255, 255, 255, 0.027);
+
+$padding_type_0: 8px 24px 8px 24px;
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 14.5px 14.5px 14.5px 14.5px;
+$border_radius_type_2: 20px 20px 20px 20px;
+$border_radius_type_3: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_4: 4.5px 4.5px 4.5px 4.5px;
+$border_radius_type_5: 45px 45px 45px 45px;
+
+$font_type_0: 600 24px/2.87 "Roboto", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
+$font_type_3: 400 14px/2.21 "Poppins", Helvetica, Arial, serif;
+$font_type_4: 400 13px/2.38 "Poppins", Helvetica, Arial, serif;
+$font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
+
+.box5 {
+  @include flex-column;
+  background-color: $color_type_10;
+  border-radius: $border_radius_type_2;
+  outline: 2px solid rgb(240, 240, 240);
+  outline-offset: -2px;
+  box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.149);
+  position: relative;
+  overflow: hidden;
+  min-width: 0px;
+  max-width: 413px;
+}
+.group {
+  @include flex-column;
+  position: relative;
+}
+.image1 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3.2;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 0px 0px 32px;
+}
+.icon1 {
+  border-radius: $border_radius_type_5;
+  outline: 6px solid rgb(255, 255, 255);
+  width: 90px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 71px;
+  left: -100vw;
+  right: -100vw;
+  margin: 0px auto;
+}
+.flexCol {
+  @include flex-column;
+  position: relative;
+  margin: 18px 20px 0px;
+}
+.medium_title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 112px;
+  position: relative;
+  min-width: 112px;
+  margin: 0px auto;
+}
+.flexCol__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 82px;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  background-color: $color_type_9;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.flexCol1 {
+  @include flex-column;
+  position: relative;
+  margin: 10px 0px 11px 18px;
+}
+.highlights2 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 100%;
+  position: relative;
+  margin: 0px 0px;
+}
+.text11 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexCol2 {
+  @include flex-column;
+  position: relative;
+  margin: 10px 0px 11px;
+}
+.highlights21 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text12 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexCol3 {
+  @include flex-column;
+  position: relative;
+  margin: 10px 32px 11px 0px;
+}
+.highlights22 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text13 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.line11 {
+  background-color: $color_type_4;
+  height: 2px;
+  position: relative;
+  margin: 20px 2px 0px;
+}
+.flexCol4 {
+  @include flex-column;
+  position: relative;
+  margin: 14px 2px 0px;
+}
+.highlights11 {
+  @include font-face($font_type_2, $color_type_0, 0px);
+  width: 85.59%;
+  position: relative;
+  margin: 0px 10.17% 0px 4.24%;
+}
+.flexCol5 {
+  @include flex-column;
+  position: relative;
+  margin: 16px 18px 0px;
+}
+.rect2 {
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_4;
+  position: relative;
+  min-height: 9px;
+}
+.flexCol5__item {
+  margin-top: -9px;
+  @include flex-column;
+  position: relative;
+}
+.rect3 {
+  background-color: $color_type_6;
+  border-radius: $border_radius_type_4;
+  width: 84.45%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 9px;
+  margin: 0px 15.55% 0px 0%;
+}
+.rect4 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_4;
+  width: 54.69%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 9px;
+  margin: 0px 45.31% 0px 0%;
+}
+.flexRow {
+  @include v-center-content;
+  position: relative;
+  margin: 16px 18px 0px;
+}
+.flexRow1 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 93px;
+}
+.flexRow1__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 29px;
+}
+.icon {
+  border-radius: $border_radius_type_1;
+  width: 29px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 29px;
+  margin: 0px 0px 2px;
+}
+.flexRow1__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 64px;
+  min-width: 64px;
+}
+.info {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_5;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: -0.30000000000000004px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 9px;
+}
+.flexRow__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 45px;
+}
+.flexRow2 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 99px;
+}
+.flexRow2__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 29px;
+}
+.icon2 {
+  border-radius: $border_radius_type_1;
+  width: 29px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 29px;
+  margin: 0px 0px 2px;
+}
+.flexRow2__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 70px;
+  min-width: 70px;
+}
+.info1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_5;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 8px;
+}
+.flexRow__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 34px;
+}
+.flexRow3 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 83px;
+}
+.flexRow3__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 29px;
+}
+.icon3 {
+  border-radius: $border_radius_type_1;
+  width: 29px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 29px;
+  margin: 0px 0px 2px;
+}
+.flexRow3__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 54px;
+  min-width: 54px;
+}
+.text21 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_4;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 8px;
+}
+.line1 {
+  background-color: $color_type_4;
+  height: 2px;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.flexCol6 {
+  @include flex-column;
+  position: relative;
+  margin: 14px 18px 24px 20px;
+}
+.flexCol7 {
+  @include flex-column;
+  position: relative;
+}
+.highlights12 {
+  @include font-face($font_type_2, $color_type_0, 0px);
+  width: 100%;
+  position: relative;
+  margin: 0px 0px;
+}
+.flexRow4 {
+  display: flex;
+  align-items: start;
+  column-gap: 45px;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.highlights1 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.highlights13 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.highlights14 {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexRow5 {
+  @include tn {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 21px 0px 0px;
+}
+.flexRow5__item {
+  @include tn {
+    flex: 0 1 auto;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 189px;
+}
+.box3 {
+  @include tn {
+    margin: 0px;
+  }
+  display: flex;
+  align-items: center;
+  background-color: $color_type_8;
+  border-radius: $border_radius_type_3;
+  box-shadow: 5px 4px 8px 0px rgba(0, 49, 115, 0.066);
+  padding: $padding_type_0;
+  position: relative;
+  flex-grow: 1;
+}
+.box3__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 141px;
+  min-width: 141px;
+}
+.highlights3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 15px;
+}
+.flexRow5__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 55px;
+}
+.flexRow5__item1 {
+  @include tn;
+  @include flex-column;
+  position: relative;
+  flex: 0 1 129px;
+}
+.box4 {
+  @include v-center-content;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_3;
+  padding: $padding_type_0;
+  position: relative;
+  flex-grow: 1;
+}
+.box4__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 41px;
+  min-width: 41px;
+}
+.highlights {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_8;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 10px;
+}
+.box4__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 10px;
+}
+.box4__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 30px;
+}
+.image {
+  width: 21px;
+  height: auto;
+  aspect-ratio: 1.17;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 21px;
+  margin: 7px 9px 6px 0px;
+}

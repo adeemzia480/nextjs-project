@@ -1,0 +1,301 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(107, 107, 109);
+$color_type_2: rgb(232, 241, 254);
+$color_type_3: rgb(24, 26, 37);
+$color_type_4: rgb(255, 255, 255);
+$color_type_5: rgb(5, 105, 239);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_2: 7px 7px 7px 7px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 500 20px/2 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+$font_type_3: 400 12px/3.33 "Poppins", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: $border_radius_type_0;
+  outline: 1px solid rgb(227, 227, 227);
+  outline-offset: -1px;
+  box-shadow: 0px 10px 63px 0px rgba(0, 0, 0, 0.058);
+  position: relative;
+  overflow: hidden;
+  min-height: 382px;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  min-width: 0px;
+}
+.rect {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 104px;
+  left: 24px;
+  min-width: 369px;
+}
+.rect1 {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 104px;
+  left: 710px;
+  min-width: 369px;
+}
+.rect2 {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 175px;
+  left: 24px;
+  min-width: 369px;
+}
+.rect3 {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 175px;
+  left: 710px;
+  min-width: 369px;
+}
+.rect4 {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 246px;
+  left: 24px;
+  min-width: 369px;
+}
+.rect5 {
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  width: 369px;
+  height: 14px;
+  position: absolute;
+  top: 246px;
+  left: 710px;
+  min-width: 369px;
+}
+.rect11 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 322px;
+  height: 14px;
+  position: absolute;
+  top: 104px;
+  left: 24px;
+  min-width: 322px;
+}
+.rect21 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 154px;
+  height: 14px;
+  position: absolute;
+  top: 104px;
+  left: 671px;
+  min-width: 154px;
+}
+.rect31 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 252px;
+  height: 14px;
+  position: absolute;
+  top: 175px;
+  left: 24px;
+  min-width: 252px;
+}
+.rect41 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 125px;
+  height: 14px;
+  position: absolute;
+  top: 175px;
+  left: 671px;
+  min-width: 125px;
+}
+.rect51 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 192px;
+  height: 14px;
+  position: absolute;
+  top: 246px;
+  left: 24px;
+  min-width: 192px;
+}
+.rect6 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 87px;
+  height: 14px;
+  position: absolute;
+  top: 246px;
+  left: 671px;
+  min-width: 87px;
+}
+.info {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 118px;
+  left: 24px;
+  min-width: 0px;
+}
+.info1 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 118px;
+  left: 671px;
+  min-width: 0px;
+}
+.info2 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 189px;
+  left: 24px;
+  min-width: 0px;
+}
+.info3 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 189px;
+  left: 671px;
+  min-width: 0px;
+}
+.info4 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 260px;
+  left: 24px;
+  min-width: 0px;
+}
+.info5 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 260px;
+  left: 671px;
+  min-width: 0px;
+}
+.subtitle {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 91px;
+  left: 417px;
+  min-width: 0px;
+}
+.subtitle1 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 91px;
+  left: 1103px;
+  min-width: 0px;
+}
+.subtitle2 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 162px;
+  left: 417px;
+  min-width: 0px;
+}
+.subtitle3 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 162px;
+  left: 1103px;
+  min-width: 0px;
+}
+.subtitle4 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 233px;
+  left: 417px;
+  min-width: 0px;
+}
+.subtitle5 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 233px;
+  left: 1103px;
+  min-width: 0px;
+}
+.box {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_1;
+  width: 136px;
+  height: 47px;
+  position: absolute;
+  top: 304px;
+  left: 1102px;
+  min-width: 136px;
+}
+.highlights {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_5;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 8px 24px;
+}
