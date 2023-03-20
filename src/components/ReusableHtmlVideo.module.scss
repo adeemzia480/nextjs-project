@@ -1,0 +1,11 @@
+@use "utils" as *;
+
+.group {
+  @include flex-column;
+  position: relative;
+}
+.box {
+  height: auto;
+  max-width: 768px;
+  position: relative;
+}

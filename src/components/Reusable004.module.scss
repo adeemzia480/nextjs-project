@@ -49,6 +49,7 @@ $font_type_5: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
     object-fit: cover;
   }
   @include xs {
+    object-position: 0% center;
     height: 400px;
   }
   width: 100%;
@@ -135,6 +136,7 @@ $font_type_5: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
 .flexRow__item {
   @include xl {
     flex: 0 1 162px;
+    min-width: unset;
   }
   @include lg {
     flex: 0 1 auto;
@@ -167,6 +169,7 @@ $font_type_5: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
 .flexRow__item1 {
   @include lg {
     flex: 0 1 auto;
+    min-width: unset;
   }
   @include xs {
     flex: 0 0 calc(1 / 1 * 100% - 16px / 1);
@@ -198,7 +201,9 @@ $font_type_5: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
   flex-grow: 1;
 }
 .flexRow1__item {
-  @include xs;
+  @include xs {
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 142px;
@@ -222,7 +227,9 @@ $font_type_5: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
   height: 100%;
 }
 .flexRow1__item1 {
-  @include xs;
+  @include xs {
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 238px;

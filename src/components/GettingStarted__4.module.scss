@@ -67,6 +67,7 @@ $font_type_4: 400 14px/1.78 "Raleway", Helvetica, Arial, serif;
 .flexRow__item {
   @include xxs {
     flex: 0 1 auto;
+    min-width: unset;
   }
   @include flex-column;
   position: relative;

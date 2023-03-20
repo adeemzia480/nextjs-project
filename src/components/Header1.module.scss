@@ -1,0 +1,455 @@
+@use "utils" as *;
+
+$color_type_0: rgb(233, 235, 237);
+$color_type_1: rgb(24, 26, 37);
+$color_type_2: rgb(246, 246, 246);
+$color_type_3: rgb(42, 45, 64);
+$color_type_4: rgb(5, 7, 29);
+
+$border_radius_type_0: 15px 15px 15px 15px;
+$border_radius_type_1: 5px 5px 5px 5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 18px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+
+.box5 {
+  @include flex-column;
+  width: 1279px;
+  height: 553px;
+  position: relative;
+  min-width: 1279px;
+}
+.box51 {
+  @include flex-column;
+  border-radius: $border_radius_type_0;
+  outline: 2px solid rgb(233, 235, 237);
+  outline-offset: -2px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  min-height: 521px;
+  margin: 32px 0px 0px;
+}
+.rect {
+  background-color: $color_type_2;
+  width: 1279px;
+  height: 73px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 1279px;
+}
+.box4 {
+  @include flex-column;
+  border-radius: $border_radius_type_1;
+  outline: 1.5px solid rgb(215, 215, 215);
+  outline-offset: -1.5px;
+  width: 194px;
+  height: 47px;
+  position: absolute;
+  overflow: hidden;
+  top: 13px;
+  left: 1072px;
+  min-width: 194px;
+}
+.text {
+  @include font-face($font_type_2, $color_type_4, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  min-width: 0px;
+}
+.image1 {
+  width: 11px;
+  height: auto;
+  aspect-ratio: 1.83;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 21px;
+  left: 167px;
+  min-width: 11px;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 17px;
+  left: 28px;
+  min-width: 0px;
+}
+.line {
+  background-color: $color_type_0;
+  width: 1279px;
+  height: 2px;
+  position: absolute;
+  top: 139px;
+  left: 0px;
+  min-width: 1279px;
+}
+.line1 {
+  background-color: $color_type_0;
+  width: 1279px;
+  height: 2px;
+  position: absolute;
+  top: 213px;
+  left: 0px;
+  min-width: 1279px;
+}
+.line2 {
+  background-color: $color_type_0;
+  width: 1279px;
+  height: 2px;
+  position: absolute;
+  top: 288px;
+  left: 0px;
+  min-width: 1279px;
+}
+.line3 {
+  background-color: $color_type_0;
+  width: 1279px;
+  height: 2px;
+  position: absolute;
+  top: 363px;
+  left: 0px;
+  min-width: 1279px;
+}
+.line4 {
+  background-color: $color_type_0;
+  width: 1279px;
+  height: 2px;
+  position: absolute;
+  top: 438px;
+  left: 0px;
+  min-width: 1279px;
+}
+.text1 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 28px;
+  min-width: 0px;
+}
+.highlights2 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 28px;
+  min-width: 0px;
+}
+.highlights21 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 28px;
+  min-width: 0px;
+}
+.highlights22 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 28px;
+  min-width: 0px;
+}
+.highlights23 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 28px;
+  min-width: 0px;
+}
+.highlights24 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 28px;
+  min-width: 0px;
+}
+.text11 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 286px;
+  min-width: 0px;
+}
+.highlights25 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 286px;
+  min-width: 0px;
+}
+.highlights26 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 286px;
+  min-width: 0px;
+}
+.highlights27 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 286px;
+  min-width: 0px;
+}
+.highlights28 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 286px;
+  min-width: 0px;
+}
+.highlights29 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 286px;
+  min-width: 0px;
+}
+.text12 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 505px;
+  min-width: 0px;
+}
+.highlights210 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 505px;
+  min-width: 0px;
+}
+.highlights211 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 505px;
+  min-width: 0px;
+}
+.highlights212 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 505px;
+  min-width: 0px;
+}
+.highlights213 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 505px;
+  min-width: 0px;
+}
+.highlights214 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 505px;
+  min-width: 0px;
+}
+.text13 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 707px;
+  min-width: 0px;
+}
+.highlights215 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 707px;
+  min-width: 0px;
+}
+.highlights216 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 707px;
+  min-width: 0px;
+}
+.highlights217 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 707px;
+  min-width: 0px;
+}
+.highlights218 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 707px;
+  min-width: 0px;
+}
+.highlights219 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 707px;
+  min-width: 0px;
+}
+.text14 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 938px;
+  min-width: 0px;
+}
+.highlights220 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 938px;
+  min-width: 0px;
+}
+.highlights221 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 938px;
+  min-width: 0px;
+}
+.highlights222 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 938px;
+  min-width: 0px;
+}
+.highlights223 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 938px;
+  min-width: 0px;
+}
+.highlights224 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 938px;
+  min-width: 0px;
+}
+.text15 {
+  @include font-face($font_type_2, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: 1136px;
+  min-width: 0px;
+}
+.highlights225 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 164px;
+  left: 1136px;
+  min-width: 0px;
+}
+.highlights226 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: 1136px;
+  min-width: 0px;
+}
+.highlights227 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 314px;
+  left: 1136px;
+  min-width: 0px;
+}
+.highlights228 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 389px;
+  left: 1136px;
+  min-width: 0px;
+}
+.highlights229 {
+  @include font-face($font_type_1, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 464px;
+  left: 1136px;
+  min-width: 0px;
+}

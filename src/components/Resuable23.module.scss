@@ -1,0 +1,37 @@
+@use "utils" as *;
+
+$padding_type_0: 0px;
+
+.root {
+  @include flex-column;
+  padding: $padding_type_0;
+  position: relative;
+  min-height: 1250px;
+}
+.flexRow {
+  @include mq-between(xl, xxl);
+  display: flex;
+  align-items: start;
+  width: 99.84%;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1279px;
+  margin: 100px auto 0px;
+}
+.box {
+  box-shadow: 3px 4px 135px 0px rgba(0, 0, 0, 0.086);
+  position: relative;
+  flex: 0 1 844px;
+}
+.flexRow__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 40px;
+}
+.wrapper10 {
+  @include md {
+    margin: 0px 0px 19px;
+  }
+  position: relative;
+  flex: 0 1 395px;
+}

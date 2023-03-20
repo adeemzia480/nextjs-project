@@ -1,0 +1,118 @@
+@use "utils" as *;
+
+$color_type_0: rgb(24, 26, 37);
+$color_type_1: rgb(255, 255, 255);
+$color_type_2: rgb(5, 105, 239);
+
+$padding_type_0: 8px 24px 8px 24px;
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  position: relative;
+}
+.flexRow {
+  @include mq-between(xl, xxl) {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  @include md {
+    margin: 20px 30px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 47px;
+  margin: 20px 20px 0px;
+}
+.flexRow__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 241px;
+  min-width: 241px;
+}
+.title {
+  @include xs {
+    font-size: 20px;
+    text-align: left;
+  }
+  @include lg;
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 4px 0px 3px;
+}
+.flexRow__spacer {
+  @include mq-between(xl, xxl) {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 912px;
+}
+.flexRow__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 126px;
+}
+.box {
+  @include v-center-content;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  padding: $padding_type_0;
+  position: relative;
+  flex-grow: 1;
+}
+.highlights {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 78px;
+}
+.wrapper1 {
+  @include xxs {
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 16px;
+  column-gap: 16px;
+  position: relative;
+  min-width: 0px;
+  max-width: 1251px;
+  margin: 28px 14px 0px;
+}
+.wrapper1__item {
+  @include xxs {
+    flex: 1 1 320px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 407px;
+}
+.box1 {
+  filter: drop-shadow(6px 6px 35px rgba(0, 0, 0, 0.149));
+  position: relative;
+  flex-grow: 1;
+}

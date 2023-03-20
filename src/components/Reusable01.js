@@ -1,6 +1,7 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import cn from 'classnames';
 import PrimaryBtn from 'components/PrimaryBtn';
-import PropTypes from 'prop-types';
 
 import styles from './Reusable01.module.scss';
 

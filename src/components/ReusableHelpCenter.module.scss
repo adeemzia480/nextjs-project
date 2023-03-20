@@ -1,0 +1,97 @@
+@use "utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$border_radius_type_0: 21px 21px 21px 21px;
+
+$font_type_0: 600 52px/1.25 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 18px/1.16 "Raleway", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  position: relative;
+}
+.root1 {
+  @include flex-column;
+  background: var(--src) center center / cover no-repeat;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 4px 0px 0px;
+}
+.wrapper {
+  @include sm {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 22px 26px 22px 34px;
+}
+.wrapper__item {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 2;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 473px;
+}
+.wrapper1 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 48px 0px;
+}
+.hero_title {
+  @include sm {
+    text-align: center;
+    justify-content: center;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+}
+.highlights {
+  @include sm {
+    text-align: center;
+    justify-content: center;
+  }
+  display: flex;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  margin: 21px 0px 0px;
+}
+.wrapper__spacer {
+  @include sm {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 30px;
+}
+.wrapper__item1 {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 228px;
+}
+.wrapper2 {
+  @include sm;
+  @include flex-column;
+  background: var(--src) center center / cover no-repeat;
+  width: 228px;
+  height: 224px;
+  position: relative;
+  min-width: 228px;
+  margin: 0px auto;
+}

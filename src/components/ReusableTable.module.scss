@@ -1,0 +1,451 @@
+@use "utils" as *;
+
+$color_type_0: rgb(16, 183, 33);
+$color_type_1: rgb(233, 235, 237);
+$color_type_2: rgb(24, 26, 37);
+$color_type_3: rgb(246, 246, 246);
+$color_type_4: rgb(42, 45, 64);
+$color_type_5: rgb(5, 105, 239);
+$color_type_6: rgba(16, 184, 33, 0.149);
+$color_type_7: rgba(5, 105, 239, 0.149);
+
+$border_radius_type_0: 15px 15px 15px 15px;
+$border_radius_type_1: 5px 5px 5px 5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 18px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+
+.box {
+  @include mq-between(xl, xxl) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include flex-column;
+  border-radius: $border_radius_type_0;
+  outline: 2px solid rgb(233, 235, 237);
+  outline-offset: -2px;
+  position: relative;
+  overflow: hidden;
+  min-width: 0px;
+  max-width: 1279px;
+}
+.content_box {
+  @include v-center-content;
+  background-color: $color_type_3;
+  position: relative;
+}
+.content_box__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 136px;
+  min-width: 136px;
+}
+.title {
+  @include lg {
+    font-size: 24px;
+    text-align: left;
+    margin: 17px 0px 16px 24px;
+  }
+  @include md {
+    font-size: 20px;
+    margin: 17px 0px 16px 20px;
+  }
+  @include xs {
+    font-size: 16px;
+  }
+  @include sm {
+    margin: 17px 0px 16px 16px;
+  }
+  @include xxs {
+    margin: 17px 0px 16px 12px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_2, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 17px 0px 16px 28px;
+}
+.content_box__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 936px;
+}
+.content_box__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 207px;
+}
+.box1 {
+  @include lg {
+    margin: 13px 8px 13px 0px;
+  }
+  @include xs {
+    margin: 13px 4px 13px 0px;
+  }
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 13px 13px 0px;
+}
+.flex_row {
+  @include lg {
+    margin: 22px 24px 0px;
+  }
+  @include md {
+    margin: 22px 20px 0px;
+  }
+  @include sm {
+    margin: 22px 16px 0px;
+  }
+  @include xxs {
+    margin: 22px 12px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 22px 28px 0px;
+}
+.text1 {
+  @include font-face($font_type_2, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 57px;
+}
+.flex_row__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 186px;
+}
+.text11 {
+  @include font-face($font_type_2, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 34px;
+}
+.flex_row__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 273px;
+}
+.text12 {
+  @include font-face($font_type_2, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 91px;
+}
+.flex_row__spacer2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 487px;
+}
+.text13 {
+  @include font-face($font_type_2, $color_type_2, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 45px;
+}
+.line {
+  background-color: $color_type_1;
+  height: 2px;
+  position: relative;
+  margin: 23px 0px 0px;
+}
+.flex_row1 {
+  @include lg {
+    margin: 17px 20px 0px 24px;
+  }
+  @include md {
+    margin: 17px 16px 0px 20px;
+  }
+  @include sm {
+    margin: 17px 16px 0px;
+  }
+  @include xs {
+    margin: 17px 12px 0px 16px;
+  }
+  @include xxs {
+    margin: 17px 12px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 17px 26px 0px 28px;
+}
+.highlights {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 54px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 189px;
+}
+.highlights1 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 121px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 186px;
+}
+.highlights2 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 341px;
+  margin: 6px 0px;
+}
+.box2 {
+  @include flex-column;
+  background-color: $color_type_6;
+  border-radius: $border_radius_type_1;
+  outline: 1px solid rgb(16, 184, 33);
+  outline-offset: -1px;
+  position: relative;
+  flex: 0 1 148px;
+}
+.highlights11 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: 63px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 63px;
+  margin: 6px auto;
+}
+.line1 {
+  background-color: $color_type_1;
+  height: 2px;
+  position: relative;
+  margin: 23px 0px 0px;
+}
+.highlights3 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 54px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 189px;
+}
+.highlights4 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 121px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer3 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 186px;
+}
+.highlights5 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 341px;
+  margin: 6px 0px;
+}
+.highlights12 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: 63px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 63px;
+  margin: 6px auto;
+}
+.line2 {
+  background-color: $color_type_1;
+  height: 2px;
+  position: relative;
+  margin: 23px 0px 0px;
+}
+.highlights6 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 54px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer4 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 189px;
+}
+.highlights7 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 121px;
+  margin: 6px 0px;
+}
+.flex_row1__spacer5 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 186px;
+}
+.highlights8 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 341px;
+  margin: 6px 0px;
+}
+.highlights13 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_0, 0px);
+  width: 63px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 63px;
+  margin: 6px auto;
+}
+.line3 {
+  background-color: $color_type_1;
+  height: 2px;
+  position: relative;
+  margin: 29px 0px 0px;
+}
+.flex_row4 {
+  @include lg {
+    margin: 17px 20px 33px 24px;
+  }
+  @include md {
+    margin: 17px 16px 33px 20px;
+  }
+  @include sm {
+    margin: 17px 16px 33px;
+  }
+  @include xs {
+    margin: 17px 12px 33px 16px;
+  }
+  @include xxs {
+    margin: 17px 12px 33px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 17px 26px 33px 28px;
+}
+.highlights9 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 54px;
+  margin: 6px 0px;
+}
+.flex_row4__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 189px;
+}
+.highlights10 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 121px;
+  margin: 6px 0px;
+}
+.flex_row4__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 186px;
+}
+.highlights14 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 341px;
+  margin: 6px 0px;
+}
+.box3 {
+  @include flex-column;
+  background-color: $color_type_7;
+  border-radius: $border_radius_type_1;
+  outline: 1px solid rgb(5, 105, 239);
+  outline-offset: -1px;
+  position: relative;
+  flex: 0 1 148px;
+}
+.highlights21 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_1, $color_type_5, 0px);
+  width: 49px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 49px;
+  margin: 6px auto;
+}

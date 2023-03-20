@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import LanguageChange from 'components/LanguageChange';
 import PrimaryBtn from 'components/PrimaryBtn';
 
 import styles from './Header.module.scss';
@@ -24,22 +25,9 @@ export default function Header(props) {
       </div>
 
       <div className={styles.flexRow1}>
-        <div className={styles.flexRow2}>
-          <div className={styles.flexRow2__item}>
-            <img src={require('assets/6805d61b2d61b8b9f63a2d199e807cb3.png')} alt="alt text" className={styles.icon} />
-          </div>
-          <div className={styles.flexRow2__item1}>
-            <h5 className={styles.highlights21}>ENG</h5>
-          </div>
-          <div className={styles.flexRow2__item2}>
-            <img
-              src={require('assets/ba6fcf7fe2d7f8bed836b03f68f961f8.png')}
-              alt="alt text"
-              className={styles.image2}
-            />
-          </div>
+        <div className={styles.component}>
+          <LanguageChange />
         </div>
-
         <div className={styles.flexRow1__spacer} />
         <div className={styles.box1}>
           <PrimaryBtn btn__text={`Log In`} />

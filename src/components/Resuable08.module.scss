@@ -3,13 +3,9 @@
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(230, 230, 230);
 $color_type_2: rgb(232, 241, 254);
-$color_type_3: rgb(255, 255, 255);
-$color_type_4: rgb(5, 105, 239);
-
-$padding_type_0: 8px 24px 8px 24px;
+$color_type_3: rgb(5, 105, 239);
 
 $border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
-$border_radius_type_1: 27px 27px 27px 27px;
 
 $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
 $font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
@@ -18,10 +14,34 @@ $font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
   @include flex-column;
   position: relative;
 }
-.flexRow {
-  @include v-center-content;
+.root__item {
+  @include flex-column;
   position: relative;
-  margin: 0px 0px 0px 1px;
+}
+.flexRow {
+  @include sm {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    margin: 0px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 30px;
+}
+.flexRow__item {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 323px;
+  min-width: 323px;
 }
 .hero_title {
   @include lg {
@@ -46,79 +66,104 @@ $font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
   color: $color_type_0;
   text-align: center;
   letter-spacing: 0px;
+  width: 323px;
   position: relative;
-  flex: 0 0 auto;
+  flex-grow: 1;
   min-width: 323px;
 }
 .flexRow__spacer {
+  @include sm {
+    display: none;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 98px;
 }
-.flexRow__item {
+.flexRow__item1 {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 863px;
 }
 .box6 {
-  @include flex-column;
-  background-color: $color_type_3;
-  border-radius: $border_radius_type_1;
-  outline: 1.5px solid rgb(217, 217, 217);
-  outline-offset: -1.5px;
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-  margin: 11px 0px 4px;
-}
-.image2 {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1;
-  background: var(--src) center center / cover no-repeat;
 }
 .flex_row {
   @include lg {
-    justify-content: flex-start;
+    justify-content: center;
     align-items: start;
     column-gap: 16px;
   }
+  @include xs {
+    justify-content: flex-start;
+    column-gap: 0px;
+  }
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: start;
   align-content: flex-start;
+  row-gap: 16px;
   column-gap: 16px;
-  width: 100%;
-  height: 100%;
-  margin: 0px 20px;
+  margin: 38px 1px 0px;
+  position: relative;
 }
 .flex_row__item {
   @include lg {
     flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include xxs {
+    flex: 0 0 413px;
+  }
+  @include tn {
+    flex: 0 0 auto;
   }
   @include flex-column;
   position: relative;
+  flex: 0 1 413px;
 }
 .box5 {
+  @include xxs {
+    margin: 0px;
+  }
+  @include tn {
+    width: 320px;
+    min-width: 320px;
+  }
+  width: 413px;
   box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.149);
   position: relative;
   flex-grow: 1;
+  min-width: 413px;
 }
 .box1 {
+  @include tn {
+    width: 320px;
+    min-width: 320px;
+    margin: 0px;
+  }
+  width: 413px;
   position: relative;
   flex-grow: 1;
+  min-width: 413px;
 }
-.box {
-  @include v-center-content;
+.btn {
+  @include flex-column;
   background-color: $color_type_2;
   border-radius: $border_radius_type_0;
-  width: 126px;
-  padding: $padding_type_0;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
   position: relative;
-  min-width: 126px;
+  min-width: 0px;
   margin: 36px auto 0px;
 }
-.highlights {
+.btn__text {
   @include md {
     font-size: 12px;
   }
@@ -126,12 +171,14 @@ $font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
   align-items: center;
   justify-content: center;
   font: $font_type_1;
-  color: $color_type_4;
+  color: $color_type_3;
   text-align: center;
   letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
   position: relative;
-  flex: 0 0 auto;
-  min-width: 78px;
+  min-width: 0px;
+  margin: 8px 24px;
 }
 .line {
   background-color: $color_type_1;

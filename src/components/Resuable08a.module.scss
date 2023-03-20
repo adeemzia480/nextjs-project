@@ -70,6 +70,9 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   margin: 0px auto;
 }
 .flexCol {
+  @include tn {
+    margin: 18px 0px 0px;
+  }
   @include flex-column;
   position: relative;
   margin: 18px 20px 0px;
@@ -92,6 +95,9 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   flex: 0 1 82px;
 }
 .box2 {
+  @include tn {
+    margin: 0px 8px;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,17 +183,27 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   margin: 20px 2px 0px;
 }
 .flexCol4 {
+  @include tn {
+    margin: 14px 8px 0px;
+  }
   @include flex-column;
   position: relative;
   margin: 14px 2px 0px;
 }
 .highlights11 {
+  @include tn {
+    width: 100%;
+    margin: 0px 0px;
+  }
   @include font-face($font_type_2, $color_type_0, 0px);
   width: 85.59%;
   position: relative;
   margin: 0px 10.17% 0px 4.24%;
 }
 .flexCol5 {
+  @include tn {
+    margin: 16px 0px 0px;
+  }
   @include flex-column;
   position: relative;
   margin: 16px 18px 0px;
@@ -222,7 +238,11 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   margin: 0px 45.31% 0px 0%;
 }
 .flexRow {
-  @include v-center-content;
+  @include tn {
+    margin: 16px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
   position: relative;
   margin: 16px 18px 0px;
 }
@@ -360,6 +380,9 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   margin: 20px 0px 0px;
 }
 .flexCol6 {
+  @include tn {
+    margin: 14px 8px 24px;
+  }
   @include flex-column;
   position: relative;
   margin: 14px 18px 24px 20px;
@@ -440,12 +463,15 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   }
   display: flex;
   align-items: center;
+  width: 320px;
   position: relative;
-  margin: 21px 0px 0px;
+  min-width: 320px;
+  margin: 21px auto 0px;
 }
 .flexRow5__item {
   @include tn {
     flex: 0 1 auto;
+    min-width: unset;
   }
   @include flex-column;
   position: relative;
@@ -453,6 +479,9 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
 }
 .box3 {
   @include tn {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
     margin: 0px;
   }
   display: flex;
@@ -465,6 +494,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
 }
 .box3__item {
+  @include tn;
   @include flex-column;
   position: relative;
   flex: 0 0 141px;
@@ -487,7 +517,9 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   flex: 0 1 55px;
 }
 .flexRow5__item1 {
-  @include tn;
+  @include tn {
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 129px;

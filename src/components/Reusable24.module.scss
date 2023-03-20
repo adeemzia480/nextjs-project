@@ -1,0 +1,447 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(107, 107, 109);
+$color_type_2: rgb(16, 184, 33);
+$color_type_3: rgb(232, 241, 254);
+$color_type_4: rgb(255, 255, 255);
+$color_type_5: rgb(5, 105, 239);
+$color_type_6: rgb(6, 105, 238);
+$color_type_7: rgba(5, 105, 239, 0.149);
+
+$padding_type_0: 20px;
+
+$border_radius_type_0: 20px 20px 20px 20px;
+$border_radius_type_1: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_2: 5px 5px 5px 5px;
+
+$font_type_0: 600 20px/1.55 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 18px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 500 16px/1.93 "Poppins", Helvetica, Arial, serif;
+$font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
+
+.wrapper10 {
+  @include flex-column;
+  padding: $padding_type_0;
+  position: relative;
+}
+.wrapper10__item {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_6;
+  border-radius: $border_radius_type_0;
+  cursor: pointer;
+  box-shadow: 3px 4px 135px 0px rgba(0, 0, 0, 0.086);
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.btn__text {
+  @include mq-between(xxs, lg) {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 30px auto;
+}
+.box12 {
+  @include flex-column;
+  border-radius: $border_radius_type_0;
+  padding: $padding_type_0;
+  background: white !important;
+  position: relative;
+  overflow: hidden;
+  margin: 27px 0px 0px;
+}
+.box12__item {
+  @include flex-column;
+  position: relative;
+}
+.subtitle {
+  @include mq-between(xxs, lg) {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 24px 0px 0px;
+}
+.wrapper11 {
+  @include mq-between(xxs, lg) {
+    margin: 31px 20px 0px;
+  }
+  @include mq-between(xxs, md) {
+    margin: 31px 16px 0px;
+  }
+  @include mq-between(xxs, sm) {
+    margin: 31px 12px 0px;
+  }
+  @include tn {
+    margin: 31px 8px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 31px 0px 0px;
+}
+.highlights2 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 106px;
+}
+.wrapper11__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 207px;
+}
+.highlights {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: right;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 34px;
+}
+.wrapper111 {
+  @include mq-between(xxs, lg) {
+    margin: 20px 20px 0px;
+  }
+  @include mq-between(xxs, md) {
+    margin: 20px 16px 0px;
+  }
+  @include mq-between(xxs, sm) {
+    margin: 20px 12px 0px;
+  }
+  @include tn {
+    margin: 20px 8px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.highlights21 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 119px;
+}
+.wrapper111__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 155px;
+}
+.highlights1 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: right;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 73px;
+}
+.highlights22 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 85px;
+}
+.wrapper111__spacer1 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 155px;
+}
+.highlights3 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: right;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 107px;
+}
+.wrapper112 {
+  @include mq-between(xxs, lg) {
+    margin: 15px 20px 0px;
+  }
+  @include mq-between(xxs, md) {
+    margin: 15px 16px 0px;
+  }
+  @include mq-between(xxs, sm) {
+    margin: 15px 12px 0px;
+  }
+  @include tn {
+    margin: 15px 8px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 15px 0px 0px;
+}
+.highlights23 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 105px;
+}
+.wrapper112__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 auto;
+}
+.highlights4 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: right;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 135px;
+}
+.wrapper12 {
+  @include mq-between(xxs, lg) {
+    margin: 21px 20px 24px;
+  }
+  @include mq-between(xxs, md) {
+    margin: 21px 16px 24px;
+  }
+  @include mq-between(xxs, sm) {
+    margin: 21px 12px 24px;
+  }
+  @include tn {
+    margin: 21px 8px 24px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 21px 0px 24px;
+}
+.highlights24 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 56px;
+  margin: 4px 0px;
+}
+.wrapper12__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 143px;
+}
+.btn1 {
+  @include flex-column;
+  background-color: $color_type_7;
+  border-radius: $border_radius_type_2;
+  outline: 1px solid rgb(5, 105, 239);
+  outline-offset: -1px;
+  width: 148px;
+  cursor: pointer;
+  position: relative;
+  flex: 0 1 148px;
+  min-width: 148px;
+}
+.btn__text1 {
+  @include mq-between(xxs, sm) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_5;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 56px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 56px;
+  margin: 6px auto;
+}
+.box14 {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: $border_radius_type_0;
+  box-shadow: 3px 4px 135px 0px rgba(0, 0, 0, 0.086);
+  position: relative;
+  overflow: hidden;
+  margin: 27px 0px 0px;
+}
+.flexRow {
+  @include tn {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12.850190000000055px;
+  width: 88.85%;
+  position: relative;
+  flex-grow: 1;
+  margin: 24px auto;
+}
+.flexRow__item {
+  @include tn {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 auto;
+}
+.subtitle1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 9.85px 0px 6.15px;
+}
+.flexRow__item1 {
+  @include tn {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+}
+.btn2 {
+  @include tn;
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_1;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+  margin: 0px auto;
+}
+.btn__text2 {
+  @include mq-between(xxs, lg) {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_5;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 33.5px;
+}
+.btn3 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  cursor: pointer;
+  box-shadow: 3px 4px 135px 0px rgba(0, 0, 0, 0.086);
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  margin: 27px 0px 0px;
+}
+.btn__text21 {
+  @include mq-between(xxs, lg) {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 30px auto;
+}

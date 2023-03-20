@@ -1,0 +1,65 @@
+@use "utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$padding_type_0: undefinedpx undefinedpx undefinedpx undefinedpx;
+
+.main {
+  @include mq-between(xxl, xxxl) {
+    justify-content: flex-start;
+    align-items: stretch;
+    column-gap: 0px;
+  }
+  @include flex-column;
+  background-color: $color_type_0;
+  padding: $padding_type_0;
+  position: relative;
+  overflow: hidden;
+}
+.main__item {
+  @include flex-column;
+  position: relative;
+}
+.section1 {
+  position: relative;
+  flex-grow: 1;
+  margin: 90px 0px 0px;
+}
+.section2 {
+  @include mq-between(xxl, xxxl);
+  width: 99.86%;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1440px;
+  margin: 60px auto 0px;
+}
+.section4 {
+  @include mq-between(xxl, max) {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  @include mq-between(xxl, xxxl) {
+    width: 99.86%;
+    margin: 30px auto;
+  }
+  @include xl {
+    margin: 30px auto 0px;
+  }
+  width: 99.86%;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1440px;
+  margin: 30px auto;
+}
+.section6 {
+  position: relative;
+  flex-grow: 1;
+}
+.section7 {
+  position: relative;
+  flex-grow: 1;
+}
+.section8 {
+  position: relative;
+  flex-grow: 1;
+}
