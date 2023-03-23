@@ -33,7 +33,7 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
   }
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font: $font_type_0;
   color: $color_type_0;
   text-align: center;
@@ -54,6 +54,22 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 25px 0% 0px 91.82%;
 }
+.nextPrevBtn {
+  padding: 5px;
+  border-radius: 40px;
+  border: 1px solid rgb(107, 107, 109);
+  svg {
+    color: rgb(107, 107, 109);
+  }
+  &:hover {
+    background: rgb(5, 105, 239);
+    border: 1px solid rgb(5, 105, 239);
+    svg {
+      color: white;
+    }
+  }
+}
+
 .group {
   @include flex-column;
   background: var(--src) center center / cover no-repeat;

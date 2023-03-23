@@ -1,12 +1,12 @@
-import React from 'react';
 import cn from 'classnames';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import HeaderMobile from 'components/HeaderMobile';
 import Reusable13 from 'components/Reusable13';
 import Reusable19a from 'components/Reusable19a';
 import Reusable41 from 'components/Reusable41';
-import Footer from 'components/Footer';
+import React from 'react';
 import Headroom from 'react-headroom';
-import Header from 'components/Header';
-import HeaderMobile from 'components/HeaderMobile';
 
 import styles from './CreatorProfilePage1.module.scss';
 
@@ -43,7 +43,7 @@ export default function CreatorProfilePage1(props) {
         <div className={styles.main__item1}>
           <hr size={1} className={styles.line} />
         </div>
-        <div className={styles.main__item}>
+        <div className={styles.main__item__brand}>
           <div className={styles.root1}>
             <div className={styles.root1__item}>
               <div className={styles.flex_row}>
@@ -74,7 +74,7 @@ export default function CreatorProfilePage1(props) {
                 <div className={styles.flexRow__item}>
                   <div className={styles.box}>
                     <Reusable19a
-                      highlights3={``}
+                      highlights3={`View and Apply`}
                       highlights1={`Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet dolor do amet sint...more`}
                       highlights2={`Fixed Rate:  $3000`}
                       image={require('assets/4e76a224b4f09abf982600ae1c787960.png')}
@@ -89,7 +89,7 @@ export default function CreatorProfilePage1(props) {
                 <div className={styles.flexRow__item}>
                   <div className={styles.box2}>
                     <Reusable19a
-                      highlights3={``}
+                      highlights3={`View and Apply`}
                       highlights1={`Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet dolor do amet sint...more`}
                       highlights2={`Fixed Rate:  $3000`}
                       image={require('assets/4e76a224b4f09abf982600ae1c787960.png')}
@@ -104,7 +104,7 @@ export default function CreatorProfilePage1(props) {
                 <div className={styles.flexRow__item}>
                   <div className={styles.box3}>
                     <Reusable19a
-                      highlights3={``}
+                      highlights3={`View and Apply`}
                       highlights1={`Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet dolor do amet sint...more`}
                       highlights2={`Fixed Rate:  $3000`}
                       image={require('assets/4e76a224b4f09abf982600ae1c787960.png')}

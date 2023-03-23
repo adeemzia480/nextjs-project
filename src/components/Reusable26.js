@@ -1,9 +1,9 @@
-import React from 'react';
-import cn from 'classnames';
-import Input from 'antd/es/input';
 import 'antd/dist/antd.css';
+import Input from 'antd/es/input';
 import Select from 'antd/es/select';
+import cn from 'classnames';
 
+import { Slider } from 'antd';
 import styles from './Reusable26.module.scss';
 
 export default function Reusable26(props) {
@@ -120,10 +120,12 @@ export default function Reusable26(props) {
                 <div className={styles.wrapper12}>
                   <h5 className={styles.highlights2}>Select Rate</h5>
                   <div className={styles.wrapper12__item}>
-                    <div
+                    <Slider range defaultValue={[20, 50]} disabled={false} />
+
+                    {/* <div
                       style={{ '--src': `url(${require('assets/d6ed3706e39eb2bdbd6a695281a03d19.png')})` }}
                       className={styles.wrapper13}
-                    />
+                    /> */}
                   </div>
 
                   <div className={styles.box8}>

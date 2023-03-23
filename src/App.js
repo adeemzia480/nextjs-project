@@ -23,6 +23,7 @@ import AdMenuPage from 'components/AdMenuPage';
 import AfterLoginPage from 'components/AfterLoginPage';
 import BeforeLoginPage from 'components/BeforeLoginPage';
 import BeforeLoginPage02 from 'components/BeforeLoginPage02';
+import ChatPage from 'components/ChatPage';
 import { isMobile } from 'react-device-detect';
 
 import 'aos/dist/aos.css';
@@ -78,8 +79,13 @@ class App extends Component {
               <Link to="/AccountLinkPage">AccountLinkPage</Link>
               <br />
               <Link to="/AccountCreatePage">AccountCreatePage</Link>
+              <br />
+              <Link to="/ChatPage">Chat Page</Link>
+
             </div>
           </Route>
+
+          <Route exact path="/ChatPage" component={ChatPage} />
 
           <Route exact path="/SupportPage" component={SupportPage} />
 

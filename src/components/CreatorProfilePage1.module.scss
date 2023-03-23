@@ -35,6 +35,12 @@ $font_type_3: 14px/3 Arial, Helvetica, Arial, serif;
   @include flex-column;
   position: relative;
 }
+.main__item__brand {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include flex-column;
+  position: relative;
+}
 .section1 {
   position: relative;
   flex-grow: 1;

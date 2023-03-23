@@ -1,8 +1,9 @@
-import React from 'react';
+import { Rate } from 'antd';
 import cn from 'classnames';
-import Headroom from 'react-headroom';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
+import React from 'react';
+import Headroom from 'react-headroom';
 
 import styles from './SettingPage.module.scss';
 
@@ -40,7 +41,9 @@ export default function SettingPage(props) {
           </div>
 
           <div className={styles.flexRow}>
-            <div
+            <Rate defaultValue={3} />
+
+            {/* <div
               style={{ '--src': `url(${require('assets/cd26715a2aa35509f36c2143dec2c221.png')})` }}
               className={styles.wrapper1}
             />
@@ -59,7 +62,7 @@ export default function SettingPage(props) {
             <div
               style={{ '--src': `url(${require('assets/c47e9e19f66d29b510b81c3598917af5.png')})` }}
               className={styles.wrapper1}
-            />
+            /> */}
           </div>
 
           <div className={styles.box}>

@@ -1,11 +1,12 @@
-import React from 'react';
-import cn from 'classnames';
-import Input from 'antd/es/input';
+import { Slider } from 'antd';
 import 'antd/dist/antd.css';
+import Input from 'antd/es/input';
 import Select from 'antd/es/select';
-import Headroom from 'react-headroom';
+import cn from 'classnames';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
+import React from 'react';
+import Headroom from 'react-headroom';
 
 import styles from './AdMenuPage.module.scss';
 
@@ -257,10 +258,18 @@ export default function AdMenuPage(props) {
                       <div className={styles.wrapper18}>
                         <h5 className={styles.highlights12}>Estimated Fixed Rate</h5>
                         <div className={styles.wrapper18__item}>
-                          <div
-                            style={{ '--src': `url(${require('assets/6fb214a51e45f577bdd17cf2ad59f7b1.png')})` }}
-                            className={styles.wrapper19}
-                          />
+                          <div className={styles.wrapper19}>
+                            <Slider marks={{
+                              0: '$0',
+                              10: '$10',
+                              20: '$20',
+                              30: '$30+',
+                            }}
+                              max={30} min={0}
+                              defaultValue={30} disabled={false}
+                              tooltip={{ open: true }}
+                            />
+                          </div>
                         </div>
                       </div>
 
@@ -290,10 +299,23 @@ export default function AdMenuPage(props) {
                         <div className={styles.wrapper22}>
                           <h5 className={styles.highlights1}>Estimated CPM</h5>
                           <div className={styles.wrapper22__item}>
-                            <div
+                            <div className={styles.wrapper23} >
+                              <Slider marks={{
+                                0: '$0',
+                                10: '$10',
+                                20: '$20',
+                                30: '$30+',
+                              }}
+                                max={30} min={0}
+                                defaultValue={30} disabled={false}
+                                tooltip={{ open: true }}
+                              />
+                            </div>
+
+                            {/* <div
                               style={{ '--src': `url(${require('assets/1f62c442faba0d326c785f538b897c0c.png')})` }}
                               className={styles.wrapper23}
-                            />
+                            /> */}
                           </div>
                         </div>
                       </div>

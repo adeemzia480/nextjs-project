@@ -1,14 +1,16 @@
-import React from 'react';
 import cn from 'classnames';
-import Reusable004 from 'components/Reusable004';
-import ReusableShowCaseVideo from 'components/ReusableShowCaseVideo';
-import Reusable12 from 'components/Reusable12';
-import Reusable41 from 'components/Reusable41';
-import Reusable40 from 'components/Reusable40';
+import BarChart01 from 'components/BarChart01';
+import BarChart02 from 'components/BarChart02';
 import Footer from 'components/Footer';
-import Headroom from 'react-headroom';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
+import Reusable004 from 'components/Reusable004';
+import Reusable12 from 'components/Reusable12';
+import Reusable40 from 'components/Reusable40';
+import Reusable41 from 'components/Reusable41';
+import ReusableShowCaseVideo from 'components/ReusableShowCaseVideo';
+import React from 'react';
+import Headroom from 'react-headroom';
 
 import styles from './CreatorProfilePage.module.scss';
 
@@ -35,6 +37,19 @@ export default function CreatorProfilePage(props) {
             <ReusableShowCaseVideo />
           </div>
         </div>
+
+
+        <div className={styles.main__item}>
+          <div className={styles.section3a}>
+            <BarChart02 />
+          </div>
+        </div>
+        <div className={styles.main__item}>
+          <div className={styles.section3}>
+            <BarChart01 />
+          </div>
+        </div>
+
         <div className={styles.main__item}>
           <div className={styles.section4}>
             <Reusable12 />

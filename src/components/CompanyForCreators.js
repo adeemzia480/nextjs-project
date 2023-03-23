@@ -1,11 +1,11 @@
-import React from 'react';
 import cn from 'classnames';
-import SearchBar from 'components/SearchBar';
-import Resuable08a from 'components/Resuable08a';
 import Footer from 'components/Footer';
-import Headroom from 'react-headroom';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
+import Resuable08a from 'components/Resuable08a';
+import SearchBar from 'components/SearchBar';
+import React from 'react';
+import Headroom from 'react-headroom';
 
 import styles from './CompanyForCreators.module.scss';
 
@@ -43,7 +43,7 @@ export default function CompanyForCreators(props) {
                       xxs-x="0px minmax(0px,380px) 0px"
                       xxs-y="11px 54fr 4px">
                       <div className={styles.box6}>
-                        <SearchBar unnamed={``} />
+                        <SearchBar unnamed={`Find influencer`} />
                       </div>
                     </px-grid>
                   </div>

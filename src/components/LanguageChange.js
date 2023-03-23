@@ -1,24 +1,33 @@
-import React from 'react';
-import cn from 'classnames';
-import Select from 'antd/es/select';
-import 'antd/dist/antd.css';
+import { Popover } from 'antd';
+import { useState } from 'react';
 
-import styles from './LanguageChange.module.scss';
+const content = (hide) => (
+  <div>
+    <div><a onClick={hide}>🇺🇸 English</a></div>
+    <div><a onClick={hide}>🇵🇸 Arabic</a></div>
+  </div>
+);
 
-export default function LanguageChange(props) {
+export default function LanguageChange() {
+
+
+  const [open, setOpen] = useState(false);
+  const hide = () => {
+    setOpen(false);
+  };
+  const handleOpenChange = (newOpen) => {
+    setOpen(newOpen);
+  };
   return (
-    <div className={cn(styles.group, 'language-change')}>
-      <div className={styles.select}>
-        <Select defaultValue="🇺🇸 English" bordered={false} style={{ width: '100%' }}>
-          {['🇺🇸 English', '🇨🇳 Chineese', '🇦🇪 Palestine'].map((option) => (
-            <Select.Option key={option} value={option}>
-              {option}
-            </Select.Option>
-          ))}
-        </Select>
-      </div>
-    </div>
+    <Popover
+      content={() => content(hide)}
+      trigger="click"
+      open={open}
+      onOpenChange={handleOpenChange}
+    >
+      <p>🇺🇸 English </p>
+    </Popover>
   );
-}
+};
 
 LanguageChange.inStorybook = true;

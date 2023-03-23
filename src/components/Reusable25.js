@@ -1,8 +1,8 @@
-import React from 'react';
-import cn from 'classnames';
-import Input from 'antd/es/input';
+import { Slider } from 'antd';
 import 'antd/dist/antd.css';
+import Input from 'antd/es/input';
 import Select from 'antd/es/select';
+import cn from 'classnames';
 
 import styles from './Reusable25.module.scss';
 
@@ -99,10 +99,12 @@ export default function Reusable25(props) {
 
           <div className={styles.list1}>
             <div className={styles.list1__item}>
-              <div
+              <Slider range defaultValue={[20, 50]} disabled={false} />
+
+              {/* <div
                 style={{ '--src': `url(${require('assets/aa49ce89f403c18ecc4ff2176f571253.png')})` }}
                 className={styles.wrapper7}
-              />
+              /> */}
             </div>
           </div>
         </div>

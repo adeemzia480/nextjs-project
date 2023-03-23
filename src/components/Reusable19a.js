@@ -1,10 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import cn from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 import styles from './Reusable19a.module.scss';
 
 export default function Reusable19a(props) {
+  const [isLiked, setIsLiked] = React.useState(false);
   return (
     <div className={cn(styles.box1, 'reusable19a')}>
       <div className={styles.wrapper2}>
@@ -56,11 +57,21 @@ export default function Reusable19a(props) {
             </div>
             <div className={styles.flexRow__spacer} />
             <div className={styles.flexRow__item1}>
-              <img
-                src={require('assets/93bc59c3fe0ed66b18433ef0b82baea0.png')}
-                alt="alt text"
-                className={styles.image1}
-              />
+              {
+                isLiked ? (
+                  <img onClick={() => setIsLiked(!isLiked)}
+                    src={require('assets/heart-filled.png')}
+                    alt="alt text"
+                    className={styles.image1}
+                  />
+
+                ) : (<img onClick={() => setIsLiked(!isLiked)}
+                  src={require('assets/93bc59c3fe0ed66b18433ef0b82baea0.png')}
+                  alt="alt text"
+                  className={styles.image1}
+                />)
+              }
+
             </div>
           </div>
         </div>
