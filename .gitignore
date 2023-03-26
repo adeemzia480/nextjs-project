@@ -3,3 +3,5 @@ build
 .vscode
 .gitpod.yml
 pnpm-lock.yaml
+.gitpod.yaml
+.next
