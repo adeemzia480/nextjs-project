@@ -1,7 +1,7 @@
 import { Input } from 'antd';
 import 'antd/dist/antd.css';
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 
 import styles from './Reusable22.module.scss';

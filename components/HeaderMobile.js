@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import LanguageChange from 'components/LanguageChange';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 import styles from './HeaderMobile.module.scss';
 

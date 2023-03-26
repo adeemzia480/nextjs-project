@@ -2,7 +2,7 @@ import cn from 'classnames';
 import React from 'react';
 
 import img01 from 'assets/a1d46cd81716d95e24eb00bbda6e5638.png';
-import Image from 'next/Image';
+import Image from 'next/image';
 import styles from './Reusable004.module.scss';
 
 export default function Reusable004(props) {

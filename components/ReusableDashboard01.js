@@ -1,7 +1,7 @@
 import { Select } from 'antd';
 import 'antd/dist/antd.css';
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 
 import img01 from 'assets/70c1a184fa1adf012179f4c8bbb4a65b.png';

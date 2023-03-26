@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React from 'react';
 
-import Image from 'next/Image';
+import Image from 'next/image';
 import styles from './Resuable001.module.scss';
 
 export default function Resuable001(props) {

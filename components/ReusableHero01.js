@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import PrimaryBtn from 'components/PrimaryBtn';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 
 import styles from './ReusableHero01.module.scss';

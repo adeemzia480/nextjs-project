@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import LanguageChange from 'components/LanguageChange';
 import PrimaryBtn from 'components/PrimaryBtn';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 
 import styles from './Header.module.scss';
