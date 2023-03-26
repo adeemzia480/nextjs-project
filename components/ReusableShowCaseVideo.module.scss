@@ -1,0 +1,92 @@
+@use "components/utils" as *;
+
+$color_type_0: rgb(24, 26, 37);
+$color_type_1: rgb(255, 255, 255);
+$color_type_2: rgb(5, 105, 239);
+
+$padding_type_0: 0px 20px 0px 20px;
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  position: relative;
+}
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  width: 100%;
+  padding: $padding_type_0;
+  position: relative;
+  margin: 0px 0px;
+}
+.title {
+  @include lg {
+    font-size: 24px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include xs {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0px;
+  margin: 4px 0px 3px;
+}
+.flexRow__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 auto;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text {
+  @include md {
+    font-size: 12px;
+    margin: 8px 16px;
+  }
+  @include lg {
+    margin: 8px 20px;
+  }
+  @include sm {
+    margin: 8px 12px;
+  }
+  @include tn {
+    margin: 8px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 24px;
+}
+.carousel {
+  position: relative;
+  margin: 46px 0px 76px;
+}

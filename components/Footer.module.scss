@@ -1,0 +1,323 @@
+@use "components/utils" as *;
+
+$color_type_0: transparent;
+$color_type_1: rgb(0, 0, 0);
+$color_type_2: rgb(169, 205, 255);
+$color_type_3: rgb(169, 206, 255);
+$color_type_4: rgb(255, 255, 255);
+$color_type_5: rgb(36, 124, 241);
+$color_type_6: rgb(5, 105, 239);
+
+$padding_type_0: 0px;
+
+$border_type_0: 0px;
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_1: 23px 23px 23px 23px;
+
+$font_type_0: 600 24px/0.93 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 22.441556930541992px/1 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+$font_type_3: 400 16px/2.99 "Poppins", Helvetica, Arial, serif;
+$font_type_4: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
+$font_type_5: 400 14px/1 "Poppins", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  background-color: $color_type_5;
+  position: relative;
+  overflow: hidden;
+}
+.flexRow {
+  @include xxs {
+    width: 94.38%;
+    margin: 55px 5.63% 0px 0%;
+  }
+  @include tn {
+    width: 95.97%;
+    margin: 55px 1.62% 0px 2.4%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 110px;
+  width: 88.75%;
+  position: relative;
+  margin: 55px auto 0px;
+}
+.flexCol {
+  @include xxs {
+    margin: 0px 0px 37px;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 309px;
+  margin: 0px 0px 72px;
+}
+.flexRow1 {
+  @include v-center-content;
+  column-gap: 18px;
+  position: relative;
+}
+.flexRow1__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 52px;
+}
+.image1 {
+  width: 52px;
+  height: auto;
+  aspect-ratio: 0.91;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 52px;
+}
+.subtitle {
+  @include md {
+    font-size: 16px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_1, $color_type_4, 0px);
+  position: relative;
+  flex: 0 1 152px;
+  margin: 7px 0px 5px;
+}
+.highlights1 {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_4, $color_type_4, 0px);
+  position: relative;
+  margin: 30px 0px 0px;
+}
+.flexCol1 {
+  @include xxs;
+  @include flex-column;
+  position: relative;
+  flex: 0 1 127px;
+  margin: 18px 0px 0px;
+}
+.medium_title {
+  @include lg {
+    font-size: 20px;
+    text-align: left;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_4, 0px);
+  position: relative;
+}
+.highlights {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+    margin: 16px 28px 0px 0px;
+  }
+  @include md {
+    margin: 16px 24px 0px 0px;
+  }
+  @include sm {
+    margin: 16px 20px 0px 0px;
+  }
+  @include xs {
+    margin: 16px 16px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_4, 0px);
+  position: relative;
+  min-height: 192px;
+  margin: 16px 35px 0px 0px;
+}
+.flexCol2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 134px;
+  margin: 18px 0px 0px;
+}
+.medium_title1 {
+  @include lg {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px 8px 0px 0px;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+  @include xs {
+    margin: 0px 4px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_4, 0px);
+  position: relative;
+  margin: 0px 12px 0px 0px;
+}
+.highlights2 {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_4, 0px);
+  position: relative;
+  min-height: 192px;
+  margin: 16px 0px 0px;
+}
+.list {
+  @include tn {
+    width: 300px;
+    min-width: 300px;
+  }
+  @include flex-column;
+  width: 315px;
+  position: relative;
+  flex: 0 1 315px;
+  min-width: 315px;
+  margin: 18px 0px 118px;
+}
+.medium_title2 {
+  @include lg {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px 20px 0px 0px;
+  }
+  @include sm {
+    font-size: 16px;
+    margin: 0px 12px 0px 0px;
+  }
+  @include md {
+    margin: 0px 16px 0px 0px;
+  }
+  @include tn {
+    margin: 0px 8px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_4, 0px);
+  position: relative;
+  margin: 0px 24px 0px 0px;
+}
+.content_box {
+  @include tn {
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 0px;
+    column-gap: 24px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  column-gap: 24px;
+  border-radius: $border_radius_type_1;
+  outline: 1px solid rgb(217, 217, 217);
+  background: white;
+  position: relative;
+  margin: 44px 0px 0px;
+}
+.content_box__cell {
+  @include tn {
+    flex: 0 0 calc(1 / 2 * 100% - (1 - 1 / 2) * 24px);
+    margin-left: calc(0.15 / 2 * 100% - (1 - 0.15 / 2) * 24px + 24px);
+  }
+  flex: 0 0 calc(1.1 / 2 * 100% - (1 - 1.1 / 2) * 24px);
+  margin-left: calc(0.1 / 2 * 100% - (1 - 0.1 / 2) * 24px + 24px);
+  @include flex-column;
+  position: relative;
+}
+.input {
+  @include font-face($font_type_5, $color_type_1, 0px);
+  background-color: $color_type_0;
+  padding: $padding_type_0;
+  border: $border_type_0;
+  width: 100%;
+  vertical-align: top;
+}
+.input:focus {
+  outline: none;
+}
+.input_box {
+  @include v-center-content;
+  width: 100px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 100px;
+}
+.content_box__cell1 {
+  @include mq-between(xxl, max) {
+    margin-left: 0px;
+  }
+  @include xxl {
+    margin-left: 0px;
+  }
+  @include tn {
+    flex: 0 0 calc(0 / 2 * 100% - (1 - 0 / 2) * 24px);
+  }
+  flex: 0 0 calc(0.01 / 2 * 100% - (1 - 0.01 / 2) * 24px);
+  @include flex-column;
+  position: relative;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_6;
+  border-radius: $border_radius_type_0;
+  width: 111px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  min-width: 111px;
+  margin: 0px 0px 0px 0px;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 4.5px 10.5px;
+}
+.flexCol3 {
+  @include flex-column;
+  width: 97.22%;
+  position: relative;
+  margin: 33px auto 16px;
+}
+.line {
+  background-color: $color_type_3;
+  height: 2px;
+  position: relative;
+}
+.flexCol3__cell {
+  @include flex-column;
+  position: relative;
+}
+.highlights21 {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include xxs;
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_2, -0.1px);
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 16px auto 0px;
+}

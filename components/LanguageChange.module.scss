@@ -1,0 +1,13 @@
+@use "components/utils" as *;
+
+.group {
+  @include flex-column;
+  height: auto;
+  position: relative;
+}
+.select {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0px 0px;
+}

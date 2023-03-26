@@ -1,0 +1,138 @@
+@use "utils" as *;
+
+$color_type_0: rgb(107, 107, 109);
+$color_type_1: rgb(230, 230, 230);
+$color_type_2: rgb(24, 26, 37);
+
+$font_type_0: 600 28px/1.6 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 16px/1.87 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 16px/1.75 "Poppins", Helvetica, Arial, serif;
+
+.section2 {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.flexRow {
+  @include lg {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30px;
+  }
+  @include md {
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  position: relative;
+  margin: 90px 66px 0px 108px;
+}
+.flexRow__cell {
+  @include lg {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+}
+.flexCol {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 14px 0px;
+}
+.flexCol__cell {
+  @include flex-column;
+  position: relative;
+}
+.image21 {
+  width: 61.83%;
+  height: auto;
+  aspect-ratio: 2.22;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 0px 38.17% 0px 0%;
+}
+.image3 {
+  width: 59.75%;
+  height: auto;
+  aspect-ratio: 4.8;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 16px 40.25% 0px 0%;
+}
+.highlights5 {
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  margin: 10px 0px 0px;
+}
+.flexCol1 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 15px 0px 16px;
+}
+.flexCol1__cell {
+  @include flex-column;
+  position: relative;
+}
+.image22 {
+  width: 61.83%;
+  height: auto;
+  aspect-ratio: 2.26;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 0px 38.17% 0px 0%;
+}
+.image31 {
+  width: 59.75%;
+  height: auto;
+  aspect-ratio: 4.8;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 15px 40.25% 0px 0%;
+}
+.highlights51 {
+  @include font-face($font_type_2, $color_type_0, 0px);
+  position: relative;
+  margin: 9px 0px 0px;
+}
+.flexCol2 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_2, 0px);
+  position: relative;
+}
+.highlights6 {
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  margin: 25px 9px 0px 0px;
+}
+.section2__cell {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 66px;
+}
+.line2 {
+  background-color: $color_type_1;
+  width: 88.82%;
+  height: 2px;
+  position: relative;
+  margin: 50px auto 0px;
+}

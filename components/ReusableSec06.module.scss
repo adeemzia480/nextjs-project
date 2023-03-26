@@ -1,0 +1,69 @@
+@use "utils" as *;
+
+$color_type_0: rgb(107, 107, 109);
+$color_type_1: rgb(24, 26, 37);
+$color_type_2: rgb(255, 255, 255);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 49.5px 49.5px 49.5px 49.5px;
+
+$font_type_0: 600 20px/2 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
+
+.group {
+  @include flex-column;
+  position: relative;
+  min-width: 0px;
+  max-width: 505px;
+}
+.box2 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.066);
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  margin: 50px 0px 0px;
+}
+.flexCol {
+  @include flex-column;
+  position: relative;
+  margin: 74px 18px 15px 24px;
+}
+.highlights7 {
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+}
+.flexCol1 {
+  @include flex-column;
+  width: 100%;
+  position: relative;
+  margin: 31px 0px 0px;
+}
+.subtitle {
+  @include xxs;
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_1, 0px);
+  width: 100%;
+  position: relative;
+  margin: 0px 0px;
+}
+.highlights71 {
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+}
+.icon2 {
+  border-radius: $border_radius_type_1;
+  outline: 8px solid rgb(255, 255, 255);
+  width: 99px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 34px;
+}

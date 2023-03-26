@@ -1,0 +1,615 @@
+@use "components/utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(232, 241, 254);
+$color_type_2: rgb(255, 255, 255);
+$color_type_3: rgb(39, 44, 57);
+$color_type_4: rgb(5, 105, 239);
+$color_type_5: rgb(6, 105, 239);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_2: 75px 75px 75px 75px;
+
+$font_type_0: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 16px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+
+.root {
+  padding-bottom: 20px;
+  @include flex-column;
+  border-radius: $border_radius_type_0;
+  outline: 2px solid rgb(230, 230, 230);
+  outline-offset: -2px;
+  position: relative;
+}
+.group {
+  @include flex-column;
+  position: relative;
+  min-height: 266px;
+  margin: 1px 0px 0px;
+}
+.image {
+  width: 100%;
+  height: 191px;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 0px 75px;
+}
+.flexRow {
+  @include lg {
+    left: 32px;
+    right: 32px;
+  }
+  @include md {
+    left: 28px;
+    right: 28px;
+  }
+  @include sm {
+    left: 24px;
+    right: 24px;
+  }
+  @include xs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    align-items: center;
+    left: 20px;
+    right: 20px;
+  }
+  @include xxs {
+    left: 16px;
+    right: 16px;
+  }
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 116px;
+  bottom: 0px;
+  left: 40px;
+  right: 40px;
+}
+.flexRow__item {
+  @include xs {
+    flex: 0 0 130px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 150px;
+}
+.image1 {
+  border-radius: $border_radius_type_2;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+}
+.flexRow__spacer {
+  @include xs {
+    flex: 1 1 calc(100% - 130px);
+    margin-left: 0px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 29px;
+}
+.flexRow__item1 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 458px;
+}
+.flexRow1 {
+  @include lg {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 21px;
+  }
+  @include md {
+    column-gap: 16px;
+  }
+  @include xs {
+    margin: 0px;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 21px;
+  position: relative;
+  flex-grow: 1;
+  margin: 103px 0px 0px;
+}
+.flexRow1__item {
+  @include lg {
+    flex: 0 1 auto;
+    min-width: 0px;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 221px;
+  min-width: 221px;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_1;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 22px;
+}
+.flexRow1__item1 {
+  @include lg {
+    flex: 0 1 auto;
+    min-width: 0px;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 216px;
+  min-width: 216px;
+}
+.btn1 {
+  @include flex-column;
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_1;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text1 {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 17px;
+}
+.flexCol {
+  @include lg {
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: 25px;
+    column-gap: 0px;
+    width: 88.5%;
+  }
+  @include md {
+    width: 91.12%;
+  }
+  @include sm {
+    width: 93.19%;
+  }
+  @include xs {
+    width: 94.8%;
+  }
+  @include xxs {
+    width: 96.05%;
+  }
+  @include tn {
+    width: 97.01%;
+    margin: 76px auto 3px;
+  }
+  @include flex-column;
+  row-gap: 30px;
+  width: 85.23%;
+  position: relative;
+  margin: 53px auto 3px;
+}
+.flexCol__item {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 auto;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  align-content: flex-start;
+  row-gap: 25px;
+  column-gap: 25px;
+  position: relative;
+  flex-grow: 1;
+}
+.flexRow2 {
+  @include xs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  position: relative;
+  flex: 1 1 467px;
+}
+.flexRow2__item {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.highlights {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include xxs {
+    margin: 15px 0px 0px;
+  }
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 15px 0px 14px;
+}
+.flexRow2__spacer {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item1 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.box2 {
+  position: relative;
+  flex-grow: 1;
+  min-height: 53px;
+}
+.flexRow2__item2 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.highlights1 {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include xxs {
+    margin: 15px 0px 0px;
+  }
+  @include font-face($font_type_1, $color_type_3, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 15px 0px 14px;
+}
+.flexRow2__spacer1 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item3 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.flexCol__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 53px;
+}
+.flexRow2__item4 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.flexRow2__spacer2 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item5 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.flexRow2__item6 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.flexRow2__spacer3 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item7 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.flexCol__item2 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 53px;
+}
+.flexRow2__item8 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.flexRow2__spacer4 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item9 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.flexRow2__item10 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.flexRow2__spacer5 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 20px;
+}
+.flexRow2__item11 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 363px;
+  min-width: 363px;
+}
+.flexCol__item3 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 201px;
+}
+.grid1 {
+  @include lg {
+    justify-content: flex-start;
+    align-items: stretch;
+    column-gap: 0px;
+  }
+  @include xs {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  height: auto;
+  position: relative;
+  margin: 0px 0px 0px 1px;
+}
+.grid1__item {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 100px;
+  min-width: 100px;
+}
+.highlights2 {
+  @include lg {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include xs {
+    margin: 0px;
+  }
+  @include font-face($font_type_2, $color_type_3, 0px);
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 152px;
+}
+.grid1__spacer {
+  @include lg;
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 20px;
+  min-width: 20px;
+}
+.grid1__item1 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 auto;
+}
+.box3 {
+  position: relative;
+  flex-grow: 1;
+}
+.flexCol__item4 {
+  @include flex-column;
+  position: relative;
+}
+.flexRow3 {
+  @include xs;
+  @include xxs {
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+  @include tn {
+    width: 400px;
+    min-width: 400px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  width: 300px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 300px;
+  margin: 0px auto;
+}
+.flexRow3__item {
+  @include xxs {
+    flex: 0 1 100px;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 0 100px;
+  min-width: 100px;
+}
+.btn__text2 {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 21.5px;
+}
+.flexRow3__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 176px;
+  min-width: 176px;
+}
+.btn__text3 {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 29.5px;
+}

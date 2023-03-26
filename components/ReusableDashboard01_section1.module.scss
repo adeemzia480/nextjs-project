@@ -1,0 +1,274 @@
+@use "components/utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+$color_type_1: rgb(42, 45, 64);
+$color_type_2: rgb(5, 105, 239);
+$color_type_3: rgb(5, 7, 29);
+$color_type_4: rgb(61, 95, 197);
+
+$border_radius_type_0: 15px 15px 15px 15px;
+$border_radius_type_1: 8px 8px 8px 8px;
+
+$font_type_0: 400 36px/1.16 "Roboto", Helvetica, Arial, serif;
+$font_type_1: 400 20px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.section1 {
+  @include flex-column;
+  width: 99.84%;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1279px;
+  margin: 0px auto;
+}
+.box {
+  @include md {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  align-items: center;
+  background-color: $color_type_0;
+  border-radius: $border_radius_type_0;
+  outline: 2px solid rgb(233, 235, 237);
+  outline-offset: -2px;
+  width: 100%;
+  height: 100%;
+}
+.box__item {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 296px;
+}
+.flexCol {
+  @include md {
+    margin: 39px 48.5px 34px;
+  }
+  @include tn {
+    margin: 39px 48.5px 34px 33.5px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 39px 0px 49px 97px;
+}
+.subtitle {
+  @include md {
+    margin: 0px 12px 0px 0px;
+  }
+  @include font-face($font_type_1, $color_type_1, 0px);
+  position: relative;
+  margin: 0px 12px 0px 16px;
+}
+.big_title {
+  @include font-face($font_type_0, $color_type_3, 0px);
+  position: relative;
+  margin: 18px 0px 0px;
+}
+.box__spacer {
+  @include md {
+    display: none;
+    flex: 0 0 16px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 101px;
+}
+.box__item1 {
+  @include md {
+    display: none;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 2px;
+  min-width: 2px;
+}
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.02;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 24px 0px;
+}
+.box__spacer1 {
+  @include md {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 139px;
+}
+.box__item2 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 auto;
+}
+.flex_column {
+  @include md {
+    margin: 39px 48.5px 49px;
+  }
+  @include tn {
+    margin: 39px 48.5px 49px 27.5px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 39px 0px 49px;
+}
+.subtitle1 {
+  @include md {
+    margin: 0px;
+  }
+  @include font-face($font_type_1, $color_type_1, 0px);
+  position: relative;
+  margin: 0px 40px 0px 27px;
+}
+.box__spacer2 {
+  @include md {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 116px;
+}
+.box__spacer3 {
+  @include md {
+    display: none;
+    flex: 0 0 16px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 97px;
+}
+.box__item3 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 299px;
+}
+.flex_column1 {
+  @include md {
+    margin: 39px 48.5px 49px;
+  }
+  @include tn {
+    margin: 39px 48.5px 49px 23.5px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 39px 72px 49px 0px;
+}
+.subtitle2 {
+  @include md {
+    margin: 0px 0px;
+  }
+  display: flex;
+  justify-content: flex-end;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: right;
+  letter-spacing: 0px;
+  width: 143px;
+  position: relative;
+  min-width: 143px;
+  margin: 0px auto;
+}
+.flex_row {
+  @include lg;
+  @include sm {
+    margin: 32px auto 0px;
+  }
+  @include tn {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  width: 372px;
+  position: relative;
+  min-width: 372px;
+  margin: 32px 0px 0px auto;
+}
+.flex_row__item {
+  @include tn {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 152px;
+}
+.btn {
+  @include tn {
+    margin: 0px auto;
+  }
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_1;
+  width: 152px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 152px;
+  margin: 0px 0px;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px auto;
+}
+.flex_row__item1 {
+  @include tn {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 207px;
+}
+.btn1 {
+  @include tn {
+    margin: 0px auto;
+  }
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: $border_radius_type_1;
+  width: 207px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 207px;
+}

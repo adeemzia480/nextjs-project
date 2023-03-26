@@ -1,0 +1,160 @@
+@use "components/utils" as *;
+
+$color_type_0: rgb(255, 255, 255);
+$color_type_1: rgb(42, 45, 64);
+$color_type_2: rgb(5, 105, 239);
+$color_type_3: rgb(5, 7, 29);
+$color_type_4: rgb(61, 95, 197);
+
+$border_radius_type_0: 15px 15px 15px 15px;
+$border_radius_type_1: 8px 8px 8px 8px;
+
+$font_type_0: 400 36px/1.16 "Roboto", Helvetica, Arial, serif;
+$font_type_1: 400 20px/1.5 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.group1 {
+  @include flex-column;
+  width: 1279px;
+  height: 257px;
+  position: relative;
+  min-width: 1279px;
+}
+.box {
+  @include flex-column;
+  background-color: $color_type_0;
+  border-radius: $border_radius_type_0;
+  outline: 2px solid rgb(233, 235, 237);
+  outline-offset: -2px;
+  width: 1279px;
+  height: 178px;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  min-width: 1279px;
+}
+.subtitle {
+  @include font-face($font_type_1, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 39px;
+  left: 113px;
+  min-width: 0px;
+}
+.big_title {
+  @include font-face($font_type_0, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 87px;
+  left: 97px;
+  min-width: 0px;
+}
+.subtitle1 {
+  @include font-face($font_type_1, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 39px;
+  left: 565px;
+  min-width: 0px;
+}
+.big_title1 {
+  @include font-face($font_type_0, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 87px;
+  left: 538px;
+  min-width: 0px;
+}
+.subtitle2 {
+  @include font-face($font_type_1, $color_type_1, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 39px;
+  left: 1023px;
+  min-width: 0px;
+}
+.big_title2 {
+  @include font-face($font_type_0, $color_type_3, 0px);
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 87px;
+  left: 980px;
+  min-width: 0px;
+}
+.image {
+  width: 2px;
+  height: auto;
+  aspect-ratio: 0.02;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 24px;
+  left: 397px;
+  min-width: 2px;
+}
+.image1 {
+  width: 2px;
+  height: auto;
+  aspect-ratio: 0.02;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 24px;
+  left: 881px;
+  min-width: 2px;
+}
+.box1 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_1;
+  width: 152px;
+  height: 47px;
+  position: absolute;
+  overflow: hidden;
+  top: 210px;
+  left: 907px;
+  min-width: 152px;
+}
+.highlights {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 8px 1px;
+}
+.box2 {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: $border_radius_type_1;
+  width: 207px;
+  height: 47px;
+  position: absolute;
+  overflow: hidden;
+  top: 210px;
+  left: 1072px;
+  min-width: 207px;
+}
+.highlights1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+  margin: 8px 26px;
+}

@@ -1,0 +1,31 @@
+@use "components/utils" as *;
+
+.root {
+  @include flex-column;
+  margin-top: 100px;
+  position: relative;
+}
+.tabs {
+  @include lg {
+    width: 92.18%;
+  }
+  @include md {
+    width: 94.02%;
+  }
+  @include sm {
+    width: 95.44%;
+  }
+  @include xs {
+    width: 96.54%;
+  }
+  @include xxs {
+    width: 97.39%;
+  }
+  @include tn {
+    width: 98.03%;
+  }
+  width: 89.84%;
+  position: relative;
+  min-height: 56px;
+  margin: 0px auto;
+}
