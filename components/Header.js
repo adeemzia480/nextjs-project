@@ -1,8 +1,11 @@
 import cn from 'classnames';
 import LanguageChange from 'components/LanguageChange';
 import PrimaryBtn from 'components/PrimaryBtn';
-import Image from 'next/Image';
+import Image from 'next/image';
+<<<<<<< HEAD
+=======
 import React from 'react';
+>>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 
 import styles from './Header.module.scss';
 

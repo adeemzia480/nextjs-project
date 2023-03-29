@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(16, 183, 33);
 $color_type_1: rgb(233, 235, 237);
@@ -29,6 +29,7 @@ $font_type_2: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
   overflow: hidden;
   min-width: 0px;
   max-width: 1279px;
+  margin: 0px auto;
 }
 .content_box {
   @include v-center-content;

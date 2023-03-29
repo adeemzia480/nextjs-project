@@ -1,0 +1,48 @@
+@use "utils" as *;
+
+$color_type_0: rgb(24, 26, 37);
+$color_type_1: rgb(255, 255, 255);
+$color_type_2: rgb(5, 105, 239);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.title {
+  @include lg {
+    font-size: 24px;
+    text-align: left;
+    margin: 32px 20px 0px;
+  }
+  @include md {
+    font-size: 20px;
+    margin: 32px 16px 0px;
+  }
+  @include xs {
+    font-size: 16px;
+  }
+  @include sm {
+    margin: 32px 12px 0px;
+  }
+  @include tn {
+    margin: 32px 8px 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  // margin: 32px 24px 0px;
+  margin-bottom: 30px;
+}
+
+.chart {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 63px 0px;
+  border-radius: 10px;
+  outline: rgb(227, 227, 227) solid 1px;
+  padding: 24px 75.54px 29px;
+  @include xs {
+    padding: 24px 9.54px 29px 14.54px;
+  }
+}

@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(127, 129, 128);
 $color_type_1: rgb(232, 241, 254);
@@ -6,8 +6,6 @@ $color_type_2: rgb(24, 119, 242);
 $color_type_3: rgb(255, 255, 255);
 $color_type_4: rgb(4, 4, 3);
 $color_type_5: rgb(5, 105, 239);
-
-$padding_type_0: 8px 24px 8px 24px;
 
 $border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
 
@@ -25,6 +23,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   position: relative;
   overflow: hidden;
   flex-grow: 1;
+  min-height: 90px;
 }
 .wrapper {
   @include tn {
@@ -34,10 +33,10 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   }
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  margin: 22px 32px 0px;
 }
-.wrapper__item {
+.wrapper__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 162px;
@@ -61,7 +60,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 1 1 603px;
 }
-.wrapper__item1 {
+.wrapper__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 139px;
@@ -78,7 +77,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
   margin: 4px 0px;
 }
-.wrapper1__item {
+.wrapper1__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 89px;
@@ -101,7 +100,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   flex: 0 0 26px;
   min-width: 26px;
 }
-.wrapper1__item1 {
+.wrapper1__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 24px;
@@ -118,12 +117,13 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   margin: 6px 0px;
 }
 .wrapper3 {
-  display: none;
-  flex-direction: column;
+  @include flex-column;
   width: 145px;
   position: relative;
   min-width: 145px;
-  margin: 37px auto 53px;
+  margin: 50px auto 53px;
+  height: 100vh;
+  display: none;
 }
 .wrapper4 {
   @include lg {
@@ -142,7 +142,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 0px 15px 0px 16px;
 }
-.wrapper4__item {
+.wrapper4__cell {
   @include flex-column;
   position: relative;
   flex: 0 0 31px;
@@ -151,7 +151,8 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
 .highlights1 {
   @include lg {
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
   }
   display: flex;
   align-items: center;
@@ -162,7 +163,7 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
   margin: 0px 0px;
 }
-.wrapper4__item1 {
+.wrapper4__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 0 50px;
@@ -171,7 +172,8 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
 .highlights2 {
   @include lg {
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
   }
   display: flex;
   align-items: center;
@@ -184,7 +186,8 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
 .highlights21 {
   @include lg {
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
   }
   display: flex;
   align-items: center;
@@ -200,33 +203,27 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 36px 0px 0px;
 }
-.box {
-  @include v-center-content;
+.wrapper5__cell {
+  @include flex-column;
+  position: relative;
+}
+.btn {
+  @include md {
+    margin: 0px;
+  }
+  @include flex-column;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(222, 222, 222);
   outline-offset: -1px;
-  padding: $padding_type_0;
+  width: fit-content;
+  cursor: pointer;
   position: relative;
+  flex-grow: 1;
+  min-width: 0px;
 }
-.box__item {
-  @include flex-column;
-  position: relative;
-  flex: 0 0 97px;
-  min-width: 97px;
-}
-.highlights3 {
+.btn__text {
   @include md {
     font-size: 12px;
-    margin: 0px 16px;
-  }
-  @include lg {
-    margin: 0px 23px 0px 20px;
-  }
-  @include sm {
-    margin: 0px 12px;
-  }
-  @include tn {
-    margin: 0px 8px;
   }
   display: flex;
   align-items: center;
@@ -235,19 +232,24 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   color: $color_type_4;
   text-align: center;
   letter-spacing: 0px;
+  width: 50px;
+  height: auto;
   position: relative;
-  flex-grow: 1;
-  margin: 0px 23px 0px 24px;
+  min-width: 50px;
+  margin: 8px 47.5px;
 }
-.box1 {
-  @include v-center-content;
+.btn1 {
+  @include flex-column;
   background-color: $color_type_1;
   border-radius: $border_radius_type_0;
-  padding: $padding_type_0;
+  width: 145px;
+  height: auto;
+  cursor: pointer;
   position: relative;
+  min-width: 145px;
   margin: 17px 0px 0px;
 }
-.highlights4 {
+.btn__text1 {
   @include md {
     font-size: 12px;
   }
@@ -258,7 +260,9 @@ $font_type_1: 400 16px/1.82 "Poppins", Helvetica, Arial, serif;
   color: $color_type_5;
   text-align: center;
   letter-spacing: 0px;
+  width: 97px;
+  height: auto;
   position: relative;
-  flex: 0 0 auto;
   min-width: 97px;
+  margin: 8px 24px;
 }

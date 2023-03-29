@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(113, 119, 255);
@@ -12,7 +12,8 @@ $color_type_8: rgb(5, 105, 239);
 $color_type_9: rgb(6, 105, 239);
 $color_type_10: rgba(255, 255, 255, 0.027);
 
-$padding_type_0: 8px 24px 8px 24px;
+$padding_type_0: 0px 20px 0px 20px;
+$padding_type_1: 8px 24px 8px 24px;
 
 $border_radius_type_0: 10px 10px 10px 10px;
 $border_radius_type_1: 14.5px 14.5px 14.5px 14.5px;
@@ -89,7 +90,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   min-width: 112px;
   margin: 0px auto;
 }
-.flexCol__item {
+.flexCol__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 82px;
@@ -214,7 +215,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   position: relative;
   min-height: 9px;
 }
-.flexCol5__item {
+.flexCol5__cell {
   margin-top: -9px;
   @include flex-column;
   position: relative;
@@ -251,7 +252,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 0 1 93px;
 }
-.flexRow1__item {
+.flexRow1__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 29px;
@@ -268,7 +269,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   min-width: 29px;
   margin: 0px 0px 2px;
 }
-.flexRow1__item1 {
+.flexRow1__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 0 64px;
@@ -295,7 +296,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 0 1 99px;
 }
-.flexRow2__item {
+.flexRow2__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 29px;
@@ -312,7 +313,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   min-width: 29px;
   margin: 0px 0px 2px;
 }
-.flexRow2__item1 {
+.flexRow2__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 0 70px;
@@ -339,7 +340,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 0 1 83px;
 }
-.flexRow3__item {
+.flexRow3__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 29px;
@@ -356,7 +357,7 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   min-width: 29px;
   margin: 0px 0px 2px;
 }
-.flexRow3__item1 {
+.flexRow3__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 0 54px;
@@ -455,84 +456,89 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   letter-spacing: 0px;
   position: relative;
 }
-.flexRow5 {
+.flex_row {
   @include tn {
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     column-gap: 0px;
   }
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 320px;
   position: relative;
-  min-width: 320px;
-  margin: 21px auto 0px;
+  margin: 21px 0px 0px;
 }
-.flexRow5__item {
+.flex_row__cell {
   @include tn {
-    flex: 0 1 auto;
+    flex: 1 1 189px;
     min-width: unset;
   }
   @include flex-column;
   position: relative;
   flex: 0 1 189px;
 }
-.box3 {
-  @include tn {
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 0px;
-    margin: 0px;
-  }
-  display: flex;
-  align-items: center;
+.btn {
+  @include flex-column;
   background-color: $color_type_8;
   border-radius: $border_radius_type_3;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
   box-shadow: 5px 4px 8px 0px rgba(0, 49, 115, 0.066);
   padding: $padding_type_0;
   position: relative;
-  flex-grow: 1;
+  min-width: 0px;
+
+  transition: ease-out 0.2s;
+  &:hover {
+    scale: 1.1;
+  }
 }
-.box3__item {
-  @include tn;
-  @include flex-column;
-  position: relative;
-  flex: 0 0 141px;
-  min-width: 141px;
-}
-.highlights3 {
+.btn__text {
   @include v-center-content;
   justify-content: center;
   font: $font_type_1;
   color: $color_type_7;
   text-align: center;
   letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
   position: relative;
-  flex-grow: 1;
-  margin: 0px 15px;
+  min-width: 0px;
+  margin: 8px auto;
 }
-.flexRow5__spacer {
-  @include flex-column;
-  position: relative;
-  flex: 0 1 55px;
-}
-.flexRow5__item1 {
+.flex_row__spacer {
   @include tn {
     min-width: unset;
   }
   @include flex-column;
   position: relative;
-  flex: 0 1 129px;
+  flex: 0 1 16px;
+}
+.flex_row__cell1 {
+  cursor: pointer;
+  @include tn {
+    flex: 1 1 131px;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 131px;
+  transition: ease-out 0.2s;
+  &:hover {
+    scale: 1.1;
+  }
 }
 .box4 {
   @include v-center-content;
   background-color: $color_type_3;
   border-radius: $border_radius_type_3;
-  padding: $padding_type_0;
+  padding: $padding_type_1;
   position: relative;
   flex-grow: 1;
+  margin: 0px 2px 0px 0px;
 }
-.box4__item {
+.box4__cell {
   @include flex-column;
   position: relative;
   flex: 0 0 41px;
@@ -552,9 +558,10 @@ $font_type_5: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
 .box4__spacer {
   @include flex-column;
   position: relative;
-  flex: 0 1 10px;
+  flex: 0 0 10px;
+  min-width: 10px;
 }
-.box4__item1 {
+.box4__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 30px;

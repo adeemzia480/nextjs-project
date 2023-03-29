@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import React from 'react';
 
 import img01 from 'assets/703891d6aa07413f5701ffa9ad51c56d.png';
 import Image from 'next/image';

@@ -2,7 +2,7 @@ import cn from 'classnames';
 import ChatTile from 'components/ChatTile';
 import MyChatTile from 'components/MyChatTile';
 import PrimaryBtn from 'components/PrimaryBtn';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 
 import styles from './Reusable29.module.scss';

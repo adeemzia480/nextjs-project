@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 .group {
   @include flex-column;

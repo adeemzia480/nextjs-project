@@ -1,28 +1,28 @@
 import cn from 'classnames';
 import Reusable11 from 'components/Reusable11';
-import React from 'react';
 
-import img01 from 'assets/b3e496d8dd42f93792291e90ff09a2a3.png';
+import Image from 'next/image';
 import styles from './ReusableSec01.module.scss';
 
 export default function ReusableSec01(props) {
   return (
     <div className={cn(styles.root, 'reusable-sec01')}>
-      <div className={styles.root__item}>
+      <div className={styles.root__cell}>
         <div className={styles.flex_row}>
-          <div className={styles.flex_row__item}>
+          <div className={styles.flex_row__cell}>
             <h1 className={styles.hero_title}>Find Brand Deals</h1>
           </div>
           <div className={styles.flex_row__spacer} />
-          <div className={styles.flex_row__item1}>
+          <div className={styles.flex_row__cell1}>
             <div className={styles.box4}>
-              <div className={styles.box4__item}>
+              <div className={styles.box4__cell}>
                 <div className={styles.txt}>Search For brands</div>
               </div>
               <div className={styles.box4__spacer} />
-              <div className={styles.box4__item1}>
-                <div
-                  style={{ '--src': `url(${img01.src})` }}
+              <div className={styles.box4__cell1}>
+                <Image
+                  src={require('assets/b3e496d8dd42f93792291e90ff09a2a3.png')}
+                  alt="alt text"
                   className={styles.image2}
                 />
               </div>
@@ -30,9 +30,9 @@ export default function ReusableSec01(props) {
           </div>
         </div>
       </div>
-      <div className={styles.root__item}>
+      <div className={styles.root__cell}>
         <div className={styles.flexRow}>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.box}>
               <Reusable11
                 ad__type={`Ad Type: 30 sec Ad`}
@@ -47,7 +47,7 @@ export default function ReusableSec01(props) {
               />
             </div>
           </div>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.box2}>
               <Reusable11
                 ad__type={`Ad Type: 30 sec Ad`}
@@ -62,7 +62,7 @@ export default function ReusableSec01(props) {
               />
             </div>
           </div>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.box3}>
               <Reusable11
                 ad__type={`Ad Type: 30 sec Ad`}

@@ -1,7 +1,6 @@
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import styles from './Resuable08a.module.scss';
 
@@ -15,7 +14,7 @@ export default function Resuable08a(props) {
 
       <div className={styles.flexCol}>
         <h2 className={styles.medium_title}>{props.medium_title}</h2>
-        <div className={styles.flexCol__item}>
+        <div className={styles.flexCol__cell}>
           <div className={styles.box2}>
             <div className={styles.flexCol1}>
               <h5 className={styles.highlights2}>{props.highlights2}</h5>
@@ -42,24 +41,24 @@ export default function Resuable08a(props) {
 
         <div className={styles.flexCol5}>
           <div className={styles.rect2} />
-          <div className={styles.flexCol5__item}>
+          <div className={styles.flexCol5__cell}>
             <div className={styles.rect3} />
           </div>
-          <div className={styles.flexCol5__item}>
+          <div className={styles.flexCol5__cell}>
             <div className={styles.rect4} />
           </div>
         </div>
 
         <div className={styles.flexRow}>
           <div className={styles.flexRow1}>
-            <div className={styles.flexRow1__item}>
+            <div className={styles.flexRow1__cell}>
               <Image
                 src={require('assets/615c12a53b6273dcbf7a151d578d4890.png')}
                 alt="alt text"
                 className={styles.icon}
               />
             </div>
-            <div className={styles.flexRow1__item1}>
+            <div className={styles.flexRow1__cell1}>
               <div className={styles.info}>USA- 49%</div>
             </div>
           </div>
@@ -67,14 +66,14 @@ export default function Resuable08a(props) {
           <div className={styles.flexRow__spacer} />
 
           <div className={styles.flexRow2}>
-            <div className={styles.flexRow2__item}>
+            <div className={styles.flexRow2__cell}>
               <Image
                 src={require('assets/a1849fc1f522f5265b382f8f11499d09.png')}
                 alt="alt text"
                 className={styles.icon2}
               />
             </div>
-            <div className={styles.flexRow2__item1}>
+            <div className={styles.flexRow2__cell1}>
               <div className={styles.info1}>INDIA- 18%</div>
             </div>
           </div>
@@ -82,14 +81,14 @@ export default function Resuable08a(props) {
           <div className={styles.flexRow__spacer1} />
 
           <div className={styles.flexRow3}>
-            <div className={styles.flexRow3__item}>
+            <div className={styles.flexRow3__cell}>
               <Image
                 src={require('assets/dc51f0c5a0b4fe17d6efec56cf6ab840.png')}
                 alt="alt text"
                 className={styles.icon3}
               />
             </div>
-            <div className={styles.flexRow3__item1}>
+            <div className={styles.flexRow3__cell1}>
               <div className={styles.text21}>UK- 8%</div>
             </div>
           </div>
@@ -120,22 +119,20 @@ export default function Resuable08a(props) {
           </div>
         </div>
 
-        <div className={styles.flexRow5}>
-          <div className={styles.flexRow5__item}>
-            <div className={styles.box3}>
-              <div className={styles.box3__item}>
-                <h5 className={styles.highlights3}>Contact Now</h5>
-              </div>
-            </div>
+        <div className={styles.flex_row}>
+          <div className={styles.flex_row__cell}>
+            <button className={styles.btn} onClick={() => alert('It is clickable')}>
+              <span className={styles.btn__text}>Contact Now</span>
+            </button>
           </div>
-          <div className={styles.flexRow5__spacer} />
-          <div className={styles.flexRow5__item1}>
+          <div className={styles.flex_row__spacer} />
+          <div className={styles.flex_row__cell1}>
             <div className={styles.box4}>
-              <div className={styles.box4__item}>
+              <div className={styles.box4__cell}>
                 <h5 className={styles.highlights}>Like</h5>
               </div>
               <div className={styles.box4__spacer} />
-              <div className={styles.box4__item1}>
+              <div className={styles.box4__cell1}>
                 <Image
                   src={require('assets/6c527d1bb5ccbd1052fd0de671845de4.png')}
                   alt="alt text"

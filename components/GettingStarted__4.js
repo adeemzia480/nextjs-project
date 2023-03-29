@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import React from 'react';
 
 import styles from './GettingStarted__4.module.scss';
 

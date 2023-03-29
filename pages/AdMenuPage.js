@@ -3,7 +3,7 @@ import 'antd/dist/antd.css';
 import cn from 'classnames';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 import Headroom from 'react-headroom';
 

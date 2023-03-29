@@ -1,13 +1,12 @@
 import cn from 'classnames';
 import ReusableHtmlVideo from 'components/ReusableHtmlVideo';
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './ReusableShowCaseVideo.module.scss';
 
 export default function ReusableShowCaseVideo(props) {
   return (
-    <div className={cn(styles.root, 'reusable-show-case-video')}>
+    <div className={cn(styles.root, 'reusable-show-case-video', "maxContent")}>
       <div className={styles.flexRow}>
         <h1 className={styles.title}>Showcase</h1>
         <div className={styles.flexRow__item}>

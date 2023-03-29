@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(107, 107, 109);
@@ -12,10 +12,14 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
 
 .section5 {
   @include flex-column;
+  margin: auto;
   padding-bottom: 50px;
+  margin-top: 50px;
   position: relative;
+  min-width: 0px;
+  max-width: 1440px;
 }
-.section5__item {
+.section5__cell {
   @include flex-column;
   position: relative;
 }
@@ -46,7 +50,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   position: relative;
   flex-grow: 1;
   min-width: 0px;
-  margin: 43px auto 0px;
+  margin: 0px auto;
 }
 .group {
   @include flex-column;
@@ -58,16 +62,16 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   @include xl {
     display: none;
   }
-  width: calc(100% - 323px);
+  width: calc(100% - 295px);
   height: auto;
   aspect-ratio: 12.71;
   vertical-align: top;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   position: absolute;
-  top: 2px;
-  left: 146px;
-  right: 177px;
+  top: 0px;
+  left: 144px;
+  right: 151px;
 }
 .flexRow {
   display: flex;
@@ -79,7 +83,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   position: relative;
   flex-grow: 1;
 }
-.flexRow__item {
+.flexRow__cell {
   @include flex-column;
   position: relative;
   flex: 1 1 auto;
@@ -89,7 +93,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   position: relative;
   flex-grow: 1;
 }
-.flexCol__item {
+.flexCol__cell {
   @include flex-column;
   position: relative;
 }
@@ -134,7 +138,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   min-width: 292px;
   margin: 12px auto 0px;
 }
-.flexCol__item1 {
+.flexCol__cell1 {
   @include flex-column;
   position: relative;
 }
@@ -179,7 +183,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   min-width: 277px;
   margin: 12px auto 0px;
 }
-.flexCol__item2 {
+.flexCol__cell2 {
   @include flex-column;
   position: relative;
 }
@@ -224,7 +228,7 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   min-width: 284px;
   margin: 12px auto 0px;
 }
-.flexCol__item3 {
+.flexCol__cell3 {
   @include flex-column;
   position: relative;
 }

@@ -1,16 +1,22 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(16, 15, 33);
 $color_type_1: rgb(255, 255, 255);
 
-$border_radius_type_0: 25.606468200683594px 25.606468200683594px 25.606468200683594px 25.606468200683594px;
-$border_radius_type_1: 25px 25px 25px 25px;
+$border_radius_type_0: 10px;
+$border_radius_type_1: 25.606468200683594px 25.606468200683594px 25.606468200683594px 25.606468200683594px;
+$border_radius_type_2: 25px 25px 25px 25px;
+$border_radius_type_3: 30px;
 
-$font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
+$font_type_0: 600 26px/1.71 "Poppins", Helvetica, Arial, serif;
 
 .box {
+  @include xs {
+    border-radius: $border_radius_type_0;
+  }
   @include flex-column;
   background-color: $color_type_0;
+  border-radius: $border_radius_type_3;
   position: relative;
   overflow: hidden;
 }
@@ -22,10 +28,8 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
     width: 91.26%;
   }
   @include xxs {
-    width: 93.3%;
-  }
-  @include tn {
-    width: 94.89%;
+    width: 100%;
+    margin: 56px 0px 747px;
   }
   @include flex-column;
   width: 85.45%;
@@ -33,34 +37,28 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
   margin: 56px auto 747px;
 }
-.flexCol__item {
+.flexCol__cell {
   @include flex-column;
   position: relative;
 }
 .unnamed {
-  @include tn {
-    width: 68.12%;
+  @include xs {
+    width: 290px;
+    min-width: 290px;
   }
-  width: 61.59%;
+  width: 391px;
   height: auto;
   aspect-ratio: 4;
-  background: var(--src) center center / cover no-repeat;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
   position: relative;
-  max-width: 340px;
+  min-width: 391px;
   margin: 0px auto;
 }
 .title1 {
-  @include mq-between(sm, lg) {
-    font-size: 28px;
-  }
-  @include mq-between(sm, md) {
-    font-size: 24px;
-  }
-  @include sm {
+  @include xs {
     font-size: 20px;
-  }
-  @include tn {
-    font-size: 16px;
   }
   display: flex;
   align-items: center;
@@ -70,9 +68,12 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   text-align: center;
   letter-spacing: 0px;
   position: relative;
-  margin: 31px 0px 0px;
+  margin: 16px 0px 0px;
 }
 .flexCol1 {
+  @include xs {
+    top: 250px;
+  }
   @include flex-column;
   width: 646px;
   position: absolute;
@@ -82,13 +83,16 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   right: -100vw;
   margin: 0px auto;
 }
-.flexCol1__item {
+.flexCol1__cell {
   @include flex-column;
   position: relative;
   z-index: 4;
 }
 .image4 {
-  border-radius: $border_radius_type_0;
+  @include xxs {
+    margin: 39px 51.39% 0px 14.24%;
+  }
+  border-radius: $border_radius_type_1;
   width: 34.37%;
   height: auto;
   aspect-ratio: 1.48;
@@ -96,16 +100,16 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   object-fit: cover;
   object-position: center center;
   position: relative;
-  margin: 0px 51.39% 0px 14.24%;
+  margin: 28px 51.39% 0px 14.24%;
 }
-.flexCol1__item1 {
+.flexCol1__cell1 {
   margin-top: -145px;
   @include flex-column;
   position: relative;
   z-index: 3;
 }
 .image3 {
-  border-radius: $border_radius_type_0;
+  border-radius: $border_radius_type_1;
   width: 34.37%;
   height: auto;
   aspect-ratio: 1.53;
@@ -115,13 +119,13 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 0px 14.09% 0px 51.55%;
 }
-.flexCol1__item2 {
+.flexCol1__cell2 {
   @include flex-column;
   position: relative;
   z-index: 2;
 }
 .image2 {
-  border-radius: $border_radius_type_0;
+  border-radius: $border_radius_type_1;
   width: 30.19%;
   height: auto;
   aspect-ratio: 0.86;
@@ -131,14 +135,14 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 19px 0% 0px 69.81%;
 }
-.flexCol1__item3 {
+.flexCol1__cell3 {
   margin-top: -225px;
   @include flex-column;
   position: relative;
   z-index: 1;
 }
 .image21 {
-  border-radius: $border_radius_type_0;
+  border-radius: $border_radius_type_1;
   width: 30.19%;
   height: auto;
   aspect-ratio: 0.86;
@@ -148,14 +152,14 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 0px 69.81% 0px 0%;
 }
-.flexCol1__item4 {
+.flexCol1__cell4 {
   margin-top: -224px;
   @include flex-column;
   position: relative;
   z-index: 0;
 }
 .image1 {
-  border-radius: $border_radius_type_0;
+  border-radius: $border_radius_type_1;
   width: 33.75%;
   height: auto;
   aspect-ratio: 0.97;
@@ -165,13 +169,13 @@ $font_type_0: 600 32px/1.71 "Poppins", Helvetica, Arial, serif;
   position: relative;
   margin: 0px auto;
 }
-.flexCol1__item5 {
+.flexCol1__cell5 {
   @include flex-column;
   position: relative;
   z-index: 5;
 }
 .image5 {
-  border-radius: $border_radius_type_1;
+  border-radius: $border_radius_type_2;
   width: 100%;
   height: auto;
   aspect-ratio: 3.12;

@@ -18,6 +18,7 @@ $font_type_2: 400 16px/1.56 "Poppins", Helvetica, Arial, serif;
 
 .section7 {
   @include flex-column;
+  background-color: $color_type_2;
   position: relative;
   min-height: 461px;
 }
@@ -120,26 +121,17 @@ $font_type_2: 400 16px/1.56 "Poppins", Helvetica, Arial, serif;
   right: 280px;
 }
 .flexCol {
-  @include xl {
-    margin: 70px 228px 56px 215px;
-  }
-  @include lg {
-    margin: 70px 119px 56px 131px;
-  }
-  @include md {
-    margin: 70px 56px 56px 49px;
-  }
-  @include sm {
-    margin: 70px 16px 56px 8px;
-  }
+  @include mq-between(xxl, xxxl);
   @include flex-column;
+  width: 57.39%;
   position: relative;
   z-index: 1;
   flex-grow: 1;
-  margin: 70px 327px 56px 286px;
+  max-width: 827px;
+  margin: 70px auto 56px;
 }
 .hero_title3 {
-  @include xs {
+  @include md {
     text-align: left;
     justify-content: flex-start;
   }
@@ -153,11 +145,12 @@ $font_type_2: 400 16px/1.56 "Poppins", Helvetica, Arial, serif;
   position: relative;
 }
 .highlights8 {
+  @include md {
+    text-align: justify;
+  }
   @include xs {
     text-align: left;
     justify-content: flex-start;
-    width: 100%;
-    margin: 27px 0px 0px;
   }
   display: flex;
   align-items: center;
@@ -166,9 +159,9 @@ $font_type_2: 400 16px/1.56 "Poppins", Helvetica, Arial, serif;
   color: $color_type_1;
   text-align: center;
   letter-spacing: 0px;
-  width: 72.31%;
+  width: 100%;
   position: relative;
-  margin: 27px auto 0px;
+  margin: 27px 0px 0px;
 }
 .btn {
   @include flex-column;

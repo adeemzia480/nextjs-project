@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(24, 26, 37);
 $color_type_1: rgb(255, 255, 255);
@@ -76,6 +76,7 @@ $font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
   row-gap: 16px;
   column-gap: 16px;
   position: relative;
+  justify-content: center;
 }
 .wrapper2__item {
   @include lg {

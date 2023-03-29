@@ -1,0 +1,866 @@
+@use "utils" as *;
+
+$color_type_0: black;
+$color_type_1: white;
+$color_type_2: rgb(0, 0, 0);
+$color_type_3: rgb(107, 107, 109);
+$color_type_4: rgb(230, 230, 230);
+$color_type_5: rgb(24, 26, 37);
+$color_type_6: rgb(255, 255, 255);
+$color_type_7: rgb(5, 105, 239);
+$color_type_8: rgb(6, 105, 239);
+$color_type_9: rgb(6, 105, 239);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 15px 15px 15px 15px;
+$border_radius_type_2: 18px 18px 18px 18px;
+$border_radius_type_3: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_4: 81px 81px 81px 81px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 500 28px/1.07 "Roboto", Helvetica, Arial, serif;
+$font_type_2: 600 24px/2.87 "Roboto", Helvetica, Arial, serif;
+$font_type_3: 400 20px/3.45 "Roboto", Helvetica, Arial, serif;
+$font_type_4: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+$font_type_5: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
+$font_type_6: 500 16px/1.87 "Roboto", Helvetica, Arial, serif;
+$font_type_7: 400 14px/2.21 "Poppins", Helvetica, Arial, serif;
+
+.section1 {
+  @include flex-column;
+  height: auto;
+  position: relative;
+}
+.group {
+  @include flex-column;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  height: 253px;
+  background: var(--src) center center / cover no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.flexRow {
+  @include mq-between(xxl, xxxl) {
+    width: 67.27%;
+  }
+  @include lg {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    width: 68.07%;
+  }
+  @include sm {
+    width: 92.75%;
+  }
+  @include xxs {
+    width: 100%;
+    margin: 98px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  width: 75.99%;
+  position: relative;
+  flex-grow: 1;
+  margin: 98px auto 0px;
+}
+.flexRow__cell {
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 757px;
+}
+.flexCol {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 84px 0px 20px;
+}
+.flexRow1 {
+  @include xs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    row-gap: 16px;
+    align-items: center;
+  }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0px 0px;
+}
+.flexRow1__cell {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 162px;
+}
+.image1 {
+  @include xs {
+    justify-self: center;
+    margin: 0px auto;
+  }
+  border-radius: $border_radius_type_4;
+  outline: 11px solid rgb(255, 255, 255);
+  width: 162px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 162px;
+}
+.flexRow1__spacer {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 28px;
+}
+.flexRow1__cell1 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 468px;
+}
+.flexRow2 {
+  @include xl {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    margin: 0px;
+  }
+  @include xxs {
+    margin: 0px 62px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 93px 0px 0px;
+}
+.flexRow2__cell {
+  @include xl {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 142px;
+  min-width: 142px;
+}
+.medium_title {
+  @include xl {
+    text-align: left;
+    justify-content: flex-start;
+    color: $color_type_1;
+  }
+  @include xs {
+    text-align: center;
+    justify-content: center;
+    color: $color_type_0;
+  }
+  @include xxs {
+    margin: 0px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: -0.1px;
+  position: relative;
+  flex-grow: 1;
+}
+.flexRow2__spacer {
+  @include xl {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 40px;
+}
+.flexRow2__cell1 {
+  @include xl {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 286px;
+}
+.flexRow3 {
+  @include xs {
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  position: relative;
+  flex-grow: 1;
+}
+.flexRow3__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 36px;
+}
+.icon {
+  border-radius: $border_radius_type_2;
+  width: 36px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 36px;
+  margin: 16px 0px 17px;
+}
+.flexRow3__cell1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 238px;
+  min-width: 238px;
+}
+.subtitle {
+  @include xxs {
+    margin: 0px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.line {
+  background-color: $color_type_4;
+  height: 2px;
+  position: relative;
+  margin: 25px 0px 0px;
+}
+.flexCol1 {
+  @include lg {
+    width: 100%;
+    margin: 38px 0px 0px;
+  }
+  @include flex-column;
+  width: 86.92%;
+  position: relative;
+  max-width: 658px;
+  margin: 38px auto 0px 0px;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_5, 0px);
+  position: relative;
+}
+.highlights {
+  @include xxl {
+    text-align: justify;
+  }
+  @include lg {
+    margin: 12px 74px 0px 0px;
+  }
+  @include md {
+    margin: 12px 0px 0px;
+  }
+  @include xxs {
+    margin: 12px 0px 0px 9px;
+  }
+  @include font-face($font_type_5, $color_type_3, 0px);
+  position: relative;
+  margin: 12px 0px 0px;
+}
+.flexRow__spacer {
+  @include lg {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 57px;
+}
+.flexRow__cell1 {
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 465px;
+}
+.box5 {
+  @include lg {
+    margin: 0px;
+  }
+  @include xxs {
+    min-width: 380px;
+    max-width: 380px;
+  }
+  @include flex-column;
+  background-color: $color_type_6;
+  border-radius: $border_radius_type_1;
+  outline: 1px solid rgb(227, 227, 227);
+  outline-offset: -1px;
+  box-shadow: 0px 4px 37px 0px rgba(0, 0, 0, 0.066);
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  min-width: 465px;
+  max-width: 465px;
+}
+.flexCol2 {
+  @include xxs {
+    margin: 32px 7px 27px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 32px 32px 27px;
+}
+.flexRow4 {
+  @include xxs {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  @include tn {
+    margin: 0px 10px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.flexRow4__cell {
+  @include xxs {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 86px;
+}
+.flexCol3 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.title1 {
+  @include h-center-content;
+  font: $font_type_1;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 10px;
+}
+.highlights5 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.flexRow4__spacer {
+  @include xxs {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 67px;
+}
+.flexRow4__cell1 {
+  @include xxs {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 106px;
+}
+.title11 {
+  @include h-center-content;
+  font: $font_type_1;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 20px;
+}
+.highlights51 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.flexRow4__spacer1 {
+  @include xxs {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 64px;
+}
+.flexRow4__cell2 {
+  @include xxs {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 78px;
+}
+.title12 {
+  @include h-center-content;
+  font: $font_type_1;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 2px;
+}
+.highlights52 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.line2 {
+  background-color: $color_type_4;
+  height: 2px;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.medium_title1 {
+  @include xxs {
+    width: 100%;
+    margin: 8px 0px 0px;
+  }
+  @include tn {
+    width: 98.35%;
+    margin: 8px 1.65% 0px 0%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_2;
+  text-align: center;
+  letter-spacing: -0.1px;
+  width: 59.6%;
+  position: relative;
+  margin: 8px 40.4% 0px 0%;
+}
+.box8 {
+  @include xxs {
+    margin: 1px 0px 0px;
+  }
+  @include tn {
+    margin: 1px 6px 0px 0px;
+  }
+  @include flex-column;
+  background-color: $color_type_8;
+  border-radius: $border_radius_type_0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
+  position: relative;
+  overflow: hidden;
+  min-height: 82px;
+  margin: 1px 28px 0px 0px;
+}
+.flexRow5 {
+  @include tn {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 10px 18px 11px;
+}
+.flexRow5__cell {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 140px;
+}
+.highlights4 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 67.14%;
+  position: relative;
+  margin: 0px 32.86% 0px 0%;
+}
+.text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexRow5__spacer {
+  @include tn {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 40px;
+}
+.flexRow5__cell1 {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 71px;
+}
+.highlights41 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 25px 0px 0px;
+}
+.text1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexRow5__spacer1 {
+  @include tn {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 41px;
+}
+.flexRow5__cell2 {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 31px;
+}
+.highlights42 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 12px 0px 0px;
+}
+.text2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.box7 {
+  @include xxs {
+    margin: 8px 0px 0px;
+  }
+  @include tn {
+    margin: 8px 7px 0px 0px;
+  }
+  @include flex-column;
+  background-color: $color_type_9;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  overflow: hidden;
+  min-height: 83px;
+  margin: 8px 28px 0px 0px;
+}
+.flexRow6 {
+  @include tn {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 10px 18px 12px;
+}
+.flexRow6__cell {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 140px;
+}
+.highlights43 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 67.14%;
+  position: relative;
+  margin: 0px 32.86% 0px 0%;
+}
+.text3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexRow6__spacer {
+  @include tn {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 40px;
+}
+.flexRow6__cell1 {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 71px;
+}
+.highlights44 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 25px 0px 0px;
+}
+.text4 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.flexRow6__spacer1 {
+  @include tn {
+    flex: 1 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 31px;
+}
+.flexRow6__cell2 {
+  @include tn {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 46px;
+}
+.highlights45 {
+  @include h-center-content;
+  font: $font_type_6;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.text5 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_7;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 0px 5px 0px 10px;
+}
+.line1 {
+  margin-top: 16px;
+  background-color: $color_type_4;
+  height: 2px;
+  box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+  position: relative;
+}
+.flexRow7 {
+  @include tn {
+    margin: 24px 10px 0px 0px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 24px 0px 0px;
+}
+.flexRow7__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 206px;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_7;
+  border-radius: $border_radius_type_3;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text {
+  @include tn {
+    margin: 8px 19.5px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_4;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 47.5px;
+}
+.flexRow7__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 59px;
+}
+.flexRow8 {
+  @include v-center-content;
+  position: relative;
+  flex: 0 1 136px;
+  margin: 13px 0px 12px;
+}
+.flexRow8__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 32px;
+}
+.image6 {
+  width: 32px;
+  height: auto;
+  aspect-ratio: 1.45;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 32px;
+}
+.image6:hover {
+  transform: scale(1.1);
+}
+.flexRow8__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 25px;
+}
+.flexRow8__cell1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 25px;
+}
+.image7 {
+  width: 25px;
+  height: auto;
+  aspect-ratio: 1.14;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 25px;
+}
+.image7:hover {
+  transform: scale(1.1);
+}
+.flexRow8__cell2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 29px;
+}
+.image8 {
+  width: 29px;
+  height: auto;
+  aspect-ratio: 1.32;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 29px;
+}
+.image8:hover {
+  transform: scale(1.1);
+}

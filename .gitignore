@@ -3,3 +3,7 @@ build
 .vscode
 .gitpod.yml
 pnpm-lock.yaml
+.gitpod.yaml
+.next
+yarn-error.log
+yarn.lock

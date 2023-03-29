@@ -1,8 +1,7 @@
 import cn from 'classnames';
 import PrimaryBtn from 'components/PrimaryBtn';
-import Image from 'next/Image';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import styles from './ReusableInfluencer.module.scss';
 

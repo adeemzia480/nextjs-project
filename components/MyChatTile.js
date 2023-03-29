@@ -1,7 +1,6 @@
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import img01 from 'assets/35948ef0d447c480fa9844290546c07b.png';
 import styles from './MyChatTile.module.scss';

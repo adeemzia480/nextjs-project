@@ -4,7 +4,7 @@ import cn from 'classnames';
 import Header from 'components/Header';
 import HeaderMobile from 'components/HeaderMobile';
 import LoginLeft from 'components/LoginLeft';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 import Headroom from 'react-headroom';
 

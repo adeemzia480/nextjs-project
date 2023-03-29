@@ -1,19 +1,18 @@
 import cn from 'classnames';
-import React from 'react';
 
 import styles from './Reusable24.module.scss';
 
 export default function Reusable24(props) {
   return (
     <div className={cn(styles.wrapper10, 'reusable24')}>
-      <div className={styles.wrapper10__item}>
+      <div className={styles.wrapper10__cell}>
         <button className={styles.btn} onClick={() => alert('It is clickable')}>
           <span className={styles.btn__text}>Download as PDF</span>
         </button>
       </div>
 
       <div className={styles.box12}>
-        <div className={styles.box12__item}>
+        <div className={styles.box12__cell}>
           <h3 className={styles.subtitle}>Deal Details</h3>
         </div>
 
@@ -53,10 +52,10 @@ export default function Reusable24(props) {
 
       <div className={styles.box14}>
         <div className={styles.flexRow}>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <h3 className={styles.subtitle1}>Need Assistance?</h3>
           </div>
-          <div className={styles.flexRow__item1}>
+          <div className={styles.flexRow__cell1}>
             <button className={styles.btn2} onClick={() => alert('It is clickable')}>
               <span className={styles.btn__text2}>Contact Us</span>
             </button>
@@ -64,7 +63,7 @@ export default function Reusable24(props) {
         </div>
       </div>
 
-      <div className={styles.wrapper10__item}>
+      <div className={styles.wrapper10__cell}>
         <button className={styles.btn3} onClick={() => alert('It is clickable')}>
           <span className={styles.btn__text21}>Mark as Complete</span>
         </button>

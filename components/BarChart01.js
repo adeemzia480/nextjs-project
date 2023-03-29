@@ -1,4 +1,6 @@
-import { Column } from '@ant-design/plots';
+import dynamic from 'next/dynamic';
+import styles from './BarChart01.module.scss';
+const Column = dynamic(() => import('@ant-design/plots').then(({ Column }) => Column), { ssr: false, });
 
 export default function BarChart01() {
   const data = [
@@ -94,6 +96,12 @@ export default function BarChart01() {
       ],
     },
   };
-  return <Column {...config} />;
+  return (<div className='maxContent'>
+    <div className={styles.chart}>
+      <h1 className={styles.title}>Age and Gender</h1>
+      <Column {...config} />;
+    </div>
+  </div>)
+
 };
 

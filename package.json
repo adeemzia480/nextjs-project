@@ -1,5 +1,5 @@
 {
-  "name": "creator-market-place",
+  "name": "next-creator-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@ant-design/plots": "^1.2.5",
+<<<<<<< HEAD
+    "antd": "^5.3.2",
+    "classnames": "^2.3.2",
+    "next": "13.2.4",
+=======
+    "@types/aos": "^3.0.4",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -18,15 +25,15 @@
     "babel-loader": "^9.1.2",
     "clsx": "^1.2.1",
     "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
-    "next": "13.2.3",
-    "next-images": "^1.8.4",
+    "eslint-config-next": "13.2.4",
+    "next": "^13.2.4",
     "normalize.css": "^8.0.1",
+>>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
     "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-headroom": "^3.2.1",
-    "sass": "^1.58.3",
-    "swiper": "^9.1.1",
-    "typescript": "4.9.5"
+    "sass": "^1.60.0",
+    "swiper": "^9.1.1"
   }
 }

@@ -1,7 +1,5 @@
 import { Select } from 'antd';
-import 'antd/dist/antd.css';
 import cn from 'classnames';
-import React from 'react';
 
 import styles from './ReusableTable03.module.scss';
 

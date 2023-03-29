@@ -1,0 +1,57 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(230, 230, 230);
+
+$font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
+
+.section3 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.section3__cell {
+  @include flex-column;
+  position: relative;
+}
+.hero_title2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0px;
+  margin: 49px 0px 0px 79px;
+}
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 88.89%;
+  position: relative;
+  margin: 60px auto 0px;
+}
+.box13 {
+  box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.149);
+  position: relative;
+  flex: 0 1 411px;
+}
+.box12 {
+  position: relative;
+  flex: 0 1 413px;
+}
+.line2 {
+  background-color: $color_type_1;
+  width: 88.82%;
+  height: 2px;
+  position: relative;
+  margin: 80px auto 0px;
+}

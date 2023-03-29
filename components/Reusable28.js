@@ -1,7 +1,6 @@
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import styles from './Reusable28.module.scss';
 

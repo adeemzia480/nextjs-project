@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(1, 168, 250);
@@ -17,6 +17,7 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
 
 .root {
   @include flex-column;
+  margin: 0 auto;
   position: relative;
   min-width: 0px;
   max-width: 546px;
@@ -48,9 +49,15 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(184, 184, 184);
   outline-offset: -1px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: transform;
   position: relative;
   overflow: hidden;
   margin: 60px 22px 0px 20px;
+}
+.box:hover {
+  transform: scale(0.9);
 }
 .flexRow {
   @include v-center-content;
@@ -100,9 +107,15 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(184, 184, 184);
   outline-offset: -1px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: transform;
   position: relative;
   overflow: hidden;
   margin: 32px 22px 0px 20px;
+}
+.box2:hover {
+  transform: scale(0.9);
 }
 .flexRow1 {
   @include v-center-content;
@@ -140,10 +153,16 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(184, 184, 184);
   outline-offset: -1px;
+  cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.078);
+  transition-duration: 0.3s;
+  transition-property: transform;
   position: relative;
   overflow: hidden;
   margin: 32px 22px 0px 20px;
+}
+.box1:hover {
+  transform: scale(0.9);
 }
 .flexRow2 {
   @include v-center-content;
@@ -192,9 +211,15 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(184, 184, 184);
   outline-offset: -1px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: transform;
   position: relative;
   overflow: hidden;
   margin: 32px 22px 0px 20px;
+}
+.box3:hover {
+  transform: scale(0.9);
 }
 .flexRow3 {
   @include v-center-content;
@@ -233,9 +258,15 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
   border-radius: $border_radius_type_0;
   outline: 1px solid rgb(184, 184, 184);
   outline-offset: -1px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: transform;
   position: relative;
   overflow: hidden;
   margin: 32px 22px 0px 20px;
+}
+.box4:hover {
+  transform: scale(0.9);
 }
 .flexRow4 {
   @include v-center-content;
@@ -273,7 +304,9 @@ $font_type_4: 1em/1.16 "Roboto", Helvetica, Arial, serif;
 }
 .highlights11_box {
   width: 53.48%;
+  cursor: pointer;
   position: relative;
+  min-width: 292px;
   margin: 54px auto 0px;
 }
 .highlights11_span0 {

@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(157, 157, 157);
@@ -245,7 +245,6 @@ $font_type_2: 400 12px/2.58 "Poppins", Helvetica, Arial, serif;
   display: flex;
   align-items: center;
   border-radius: $border_radius_type_1;
-  outline: 1px solid rgb(222, 222, 222);
   outline-offset: -1px;
   width: 29.74%;
   position: relative;

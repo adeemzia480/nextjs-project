@@ -1,0 +1,64 @@
+@use "utils" as *;
+
+$padding_type_0: 0px;
+
+.root {
+  @include flex-column;
+  padding: $padding_type_0;
+  position: relative;
+  min-height: 1250px;
+}
+.flexRow {
+  @include mq-between(xl, xxl);
+  @include lg {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  align-items: start;
+  width: 99.84%;
+  position: relative;
+  flex-grow: 1;
+  max-width: 1279px;
+  margin: 100px auto 0px;
+}
+.flexRow__cell {
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 844px;
+}
+.box {
+  box-shadow: 3px 4px 135px 0px rgba(0, 0, 0, 0.086);
+  position: relative;
+  flex-grow: 1;
+}
+.flexRow__spacer {
+  @include lg {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 40px;
+}
+.flexRow__cell1 {
+  @include lg {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 395px;
+}
+.wrapper10 {
+  @include md {
+    margin: 0px 0px 19px;
+  }
+  position: relative;
+  flex-grow: 1;
+}

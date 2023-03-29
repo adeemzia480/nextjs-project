@@ -1,8 +1,7 @@
-import { Input, Slider } from 'antd';
+import { Input, Radio, Select, Slider } from 'antd';
 import cn from 'classnames';
 
 import styles from './Reusable25.module.scss';
-import ReusableSelect from './ReusableSelect';
 
 export default function Reusable25() {
   return (
@@ -13,7 +12,7 @@ export default function Reusable25() {
             <h3 className={styles.subtitle}>Deal Title</h3>
           </div>
           <div className={styles.box1}>
-            <Input style={{ width: '100%', height: '100%' }} placeholder="" />
+            <Input size={'large'} style={{ width: '100%', height: '100%' }} placeholder="" />
           </div>
         </div>
       </div>
@@ -23,7 +22,7 @@ export default function Reusable25() {
           <h3 className={styles.subtitle1}>Deal Description</h3>
         </div>
         <div className={styles.box2}>
-          <Input.TextArea style={{ width: '100%', height: '100%' }} placeholder="" />
+          <Input.TextArea size={'large'} style={{ width: '100%', height: '100%' }} placeholder="" />
         </div>
       </div>
 
@@ -36,7 +35,8 @@ export default function Reusable25() {
             <h5 className={styles.highlights2}>Ad Video Length</h5>
             <div className={styles.wrapper2__item}>
               <div className={styles.box3}>
-                <ReusableSelect />
+                <Select size={'large'} placeholder="10%" style={{ width: '100%' }} options={[]} />
+
               </div>
             </div>
           </div>
@@ -45,13 +45,7 @@ export default function Reusable25() {
             <h5 className={styles.highlights21}>Ad Video Display Time</h5>
             <div className={styles.wrapper4__item}>
               <div className={styles.box5}>
-                <ReusableSelect />
-                {/* {[].map((option) => (
-                    <Select.Option key={option} value={option}>
-                      {option}
-                    </Select.Option>
-                  ))}
-                </Select> */}
+                <Select size={'large'} placeholder="10%" style={{ width: '100%' }} options={[]} />
               </div>
             </div>
           </div>
@@ -60,8 +54,7 @@ export default function Reusable25() {
             <h5 className={styles.highlights22}>Script</h5>
             <div className={styles.wrapper3__item}>
               <div className={styles.box4}>
-                <ReusableSelect />
-
+                <Select size={'large'} placeholder="10%" style={{ width: '100%' }} options={[]} />
               </div>
             </div>
           </div>
@@ -69,15 +62,10 @@ export default function Reusable25() {
       </div>
 
       <div className={styles.box6}>
-        <div className={styles.box6__item}>
-          <div className={styles.info1}>Fixed Rate</div>
-        </div>
-        <div className={styles.box6__spacer} />
-        <div className={styles.box6__item1}>
-          <div className={styles.box7}>
-            <div className={styles.info2}>CPM</div>
-          </div>
-        </div>
+        <Radio.Group >
+          <Radio.Button defaultChecked value="large">Fixed Rate</Radio.Button>
+          <Radio.Button value="default">CPM</Radio.Button>
+        </Radio.Group>
       </div>
 
       <div className={styles.wrapper5}>
@@ -86,18 +74,13 @@ export default function Reusable25() {
 
           <div className={styles.list1}>
             <div className={styles.list1__item}>
-              <Slider range defaultValue={[20, 50]} disabled={false} />
-
-              {/* <div
-                style={{ '--src': `url(${require('assets/aa49ce89f403c18ecc4ff2176f571253.png')})` }}
-                className={styles.wrapper7}
-              /> */}
+              <Slider range defaultValue={50} disabled={false} />
             </div>
           </div>
         </div>
 
         <div className={styles.box8}>
-          <div className={styles.info}>$23</div>
+          <Input size={'large'} type="text" className={styles.input} placeholder="$23" />
         </div>
       </div>
 
@@ -106,7 +89,8 @@ export default function Reusable25() {
           <div className={styles.wrapper8}>
             <h5 className={styles.highlights24}>View Cap</h5>
             <div className={styles.box9}>
-              <ReusableSelect />
+              <Select size={'large'} placeholder="10%" style={{ width: '100%' }} options={[]} />
+
 
             </div>
           </div>
@@ -116,15 +100,7 @@ export default function Reusable25() {
           <div className={styles.wrapper41}>
             <h5 className={styles.highlights25}>Date Cap</h5>
             <div className={styles.box51}>
-              <ReusableSelect />
-
-              {/* <Select size="large" style={{ width: '100%' }}>
-                {['option 1', 'option 2', 'option 3'].map((option) => (
-                  <Select.Option key={option} value={option}>
-                    {option}
-                  </Select.Option>
-                ))}
-              </Select> */}
+              <Select size={'large'} placeholder="10%" style={{ width: '100%' }} options={[]} />
             </div>
           </div>
         </div>
@@ -133,7 +109,7 @@ export default function Reusable25() {
       <div className={styles.wrapper9}>
         <h5 className={styles.highlights26}>Brand Acknowledgement Description</h5>
         <div className={styles.box10}>
-          <Input.TextArea style={{ width: '100%', height: '100%' }} placeholder="" />
+          <Input.TextArea size={'large'} style={{ width: '100%', height: '100%' }} placeholder="" />
         </div>
       </div>
     </div>

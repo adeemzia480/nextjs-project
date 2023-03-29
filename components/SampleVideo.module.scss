@@ -1,0 +1,10 @@
+@use "utils" as *;
+
+.group {
+  @include flex-column;
+  position: relative;
+}
+.box2 {
+  position: relative;
+  flex-grow: 1;
+}

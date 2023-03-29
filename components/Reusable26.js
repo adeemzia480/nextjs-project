@@ -1,5 +1,5 @@
 import { Input, Select } from 'antd';
-import 'antd/dist/antd.css';
+
 import cn from 'classnames';
 
 import { Slider } from 'antd';

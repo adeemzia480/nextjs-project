@@ -1,6 +1,5 @@
 import cn from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
 
 import Image from 'next/image';
 import styles from './Reusable16b.module.scss';

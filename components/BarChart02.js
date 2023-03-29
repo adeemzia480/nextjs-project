@@ -1,4 +1,6 @@
-import { Bar } from '@ant-design/plots';
+import dynamic from 'next/dynamic';
+import styles from './BarChart02.module.scss';
+const Bar = dynamic(() => import('@ant-design/plots').then(({ Bar }) => Bar), { ssr: false, });
 
 export default function BarChart02() {
   const data = [
@@ -32,5 +34,9 @@ export default function BarChart02() {
       position: 'top-left',
     },
   };
-  return <Bar {...config} />;
+
+  return (<div className='maxContent'>
+    <h1 className={styles.title}>Top Geographics</h1>
+    <Bar {...config} />
+  </div>)
 };

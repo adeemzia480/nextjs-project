@@ -1,0 +1,75 @@
+@use "utils" as *;
+
+$color_type_0: rgb(24, 26, 37);
+$color_type_1: rgb(255, 255, 255);
+$color_type_2: rgb(5, 105, 239);
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.section2 {
+  @include flex-column;
+  position: relative;
+}
+.flexCol {
+  @include flex-column;
+  width: 88.85%;
+  position: relative;
+  flex-grow: 1;
+  margin: 49.64px auto 0px;
+}
+.flexRow {
+  @include v-center-content;
+  position: relative;
+  margin: 0px 0px 0px 0.47px;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 146px;
+  margin: 2.36px 0px 4.64px;
+}
+.flexRow__spacer {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 1007px;
+}
+.flexRow__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 126px;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: 126px;
+  height: 47px;
+  cursor: pointer;
+  position: relative;
+  min-width: 126px;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 24px;
+}
+.carousel {
+  position: relative;
+  min-height: 310px;
+  min-width: 0px;
+  max-width: 1279.47px;
+  margin: 40.37px 0px 0px;
+}

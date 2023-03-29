@@ -16,7 +16,7 @@ export default function Footer(props) {
                 className={styles.image1}
               />
             </div>
-            <h3 className={styles.subtitle}>Creator Marketplace</h3>
+            <h3 className={styles.subtitle}>Creator Marketplace</h3>
           </div>
 
           <h5 className={styles.highlights1}>

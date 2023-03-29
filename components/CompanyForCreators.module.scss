@@ -1,0 +1,214 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(230, 230, 230);
+$color_type_2: rgb(232, 241, 254);
+$color_type_3: rgb(255, 255, 255);
+$color_type_4: rgb(5, 105, 239);
+
+$border_radius_type_0: 23.5px 23.5px 23.5px 23.5px;
+
+$font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+
+.main {
+  @include flex-column;
+  background-color: $color_type_3;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.main__item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 823px;
+}
+.root {
+  @include flex-column;
+  width: 100%;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px -81px;
+}
+.root__item {
+  @include flex-column;
+  position: relative;
+}
+.flexRow {
+  @include sm {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+    margin: 0px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 0px 30px;
+}
+.flexRow__item {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 323px;
+  min-width: 323px;
+}
+.hero_title {
+  @include lg {
+    font-size: 36px;
+  }
+  @include md {
+    font-size: 32px;
+  }
+  @include sm {
+    font-size: 28px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include tn {
+    font-size: 20px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 323px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 323px;
+}
+.flexRow__spacer {
+  @include sm {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 98px;
+}
+.flexRow__item1 {
+  @include sm {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 863px;
+}
+.box6 {
+  width: 100%;
+  height: 100%;
+}
+.flex_row {
+  @include lg {
+    justify-content: center;
+    align-items: start;
+    column-gap: 16px;
+  }
+  @include xs {
+    justify-content: flex-start;
+    column-gap: 0px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: flex-start;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin: 38px 1px 0px;
+  position: relative;
+}
+.flex_row__item {
+  @include lg {
+    flex: 0 1 auto;
+    min-width: unset;
+  }
+  @include xxs {
+    flex: 0 0 413px;
+  }
+  @include tn {
+    flex: 0 0 auto;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 413px;
+}
+.box5 {
+  @include xxs {
+    margin: 0px;
+  }
+  @include tn {
+    width: 320px;
+    min-width: 320px;
+  }
+  width: 413px;
+  box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.149);
+  position: relative;
+  flex-grow: 1;
+  min-width: 413px;
+}
+.box1 {
+  @include tn {
+    width: 320px;
+    min-width: 320px;
+    margin: 0px;
+  }
+  width: 413px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 413px;
+}
+.flex_row__item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 413px;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+  margin: 36px auto 0px;
+  margin-bottom: 80px;
+}
+.btn__text {
+  @include md {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_4;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 24px;
+}
+.line {
+  background-color: $color_type_1;
+  height: 2px;
+  position: relative;
+  margin: 29px 3px 0px;
+}
+.section8 {
+  position: relative;
+  margin: 37px 0px 0px;
+}

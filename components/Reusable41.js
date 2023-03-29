@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './Reusable41.module.scss';
@@ -29,7 +28,13 @@ export default function Reusable41(props) {
           <div style={{ display: 'grid' }}>
             <Swiper
               ref={sliderRef}
+              className={styles.swiper}
               style={{ minWidth: 0, width: '100%', height: '100%' }}
+              // slidesPerView={"auto"}
+              // centeredSlides={true}
+              // loop={true}
+
+
               breakpoints={{
                 0: { slidesPerView: 1, spaceBetween: 20 },
                 384: { slidesPerView: 1, spaceBetween: 20 },
@@ -40,7 +45,9 @@ export default function Reusable41(props) {
                 1200: { slidesPerView: 3, spaceBetween: 20 },
                 1400: { slidesPerView: 3, spaceBetween: 20 },
                 1920: { slidesPerView: 3, spaceBetween: 20 }
-              }}>
+              }}
+
+            >
 
               <SwiperSlide>
                 <ReusableSec06
@@ -89,7 +96,7 @@ export default function Reusable41(props) {
           </div>
         </div>
 
-        <div className={styles.flexRow}>
+        <div className={cn(styles.flexRow, styles.caresolBtns)}>
           <button className={`${styles.nextPrevBtn}`} onClick={handlePrev}>
             <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 256 256"><path fill="currentColor" d="M222 128a6 6 0 0 1-6 6H54.49l61.75 61.76a6 6 0 1 1-8.48 8.48l-72-72a6 6 0 0 1 0-8.48l72-72a6 6 0 0 1 8.48 8.48L54.49 122H216a6 6 0 0 1 6 6Z"></path></svg>
           </button>

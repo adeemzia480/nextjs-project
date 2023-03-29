@@ -1,10 +1,12 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 
 $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
 
 .section6 {
+  max-width: 1440px;
+  margin: 0 auto;
   @include flex-column;
   position: relative;
 }
@@ -48,11 +50,21 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
   margin: 72px 0px 0px;
 }
 .flexRow {
-  @include v-center-content;
+  // @include v-center-content;
+  // column-gap: 16px;
+  // width: 8.18%;
+  // position: relative;
+  // margin: 25px 0% 0px 91.82%;
+  display: flex;
+  align-items: center;
   column-gap: 16px;
-  width: 8.18%;
+  /* width: 8.18%; */
   position: relative;
-  margin: 25px 0% 0px 91.82%;
+  /* margin: 25px 0% 0px 91.82%; */
+  justify-content: flex-end;
+}
+.caresolBtns {
+  margin-top: 20px;
 }
 .nextPrevBtn {
   padding: 0px 6px;
@@ -125,4 +137,10 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
   left: 0px;
   min-width: 5px;
   margin: 0px 0px 0px 15px;
+}
+
+.swiper {
+  padding: 10px;
+  overflow: visible;
+  background: transparent;
 }

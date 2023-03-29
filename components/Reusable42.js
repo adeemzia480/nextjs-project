@@ -1,13 +1,17 @@
 import cn from 'classnames';
-import Image from 'next/Image';
+<<<<<<< HEAD
+=======
+import Image from 'next/image';
 import React from 'react';
+>>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 
+import Image from 'next/image';
 import styles from './Reusable42.module.scss';
 
 export default function Reusable42(props) {
   return (
     <section className={cn(styles.section5, 'reusable42')}>
-      <div className={styles.section5__item}>
+      <div className={styles.section5__cell}>
         <h1 className={styles.hero_title2}>How we Work?</h1>
       </div>
 
@@ -15,16 +19,16 @@ export default function Reusable42(props) {
         <Image src={require('assets/3e893f2dbb582e170a4efddecf353e08.png')} alt="alt text" className={styles.image4} />
 
         <div className={styles.flexRow}>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.flexCol}>
-              <div className={styles.flexCol__item}>
+              <div className={styles.flexCol__cell}>
                 <Image
                   src={require('assets/7eb5ef0cd34ffe26e0e72bf8b91af908.png')}
                   alt="alt text"
                   className={styles.icon1}
                 />
               </div>
-              <div className={styles.flexCol__item}>
+              <div className={styles.flexCol__cell}>
                 <h2 className={styles.medium_title}>Create Account</h2>
               </div>
               <h5 className={styles.highlights7}>
@@ -32,16 +36,16 @@ export default function Reusable42(props) {
               </h5>
             </div>
           </div>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.flexCol}>
-              <div className={styles.flexCol__item1}>
+              <div className={styles.flexCol__cell1}>
                 <Image
                   src={require('assets/9f4c45d6e0099e69fd538641fdaab47e.png')}
                   alt="alt text"
                   className={styles.icon11}
                 />
               </div>
-              <div className={styles.flexCol__item1}>
+              <div className={styles.flexCol__cell1}>
                 <h2 className={styles.medium_title1}>Complete Profile</h2>
               </div>
               <h5 className={styles.highlights71}>
@@ -49,16 +53,16 @@ export default function Reusable42(props) {
               </h5>
             </div>
           </div>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.flexCol}>
-              <div className={styles.flexCol__item2}>
+              <div className={styles.flexCol__cell2}>
                 <Image
                   src={require('assets/45b1e747b2ed363b512e47cd3649f56c.png')}
                   alt="alt text"
                   className={styles.icon12}
                 />
               </div>
-              <div className={styles.flexCol__item2}>
+              <div className={styles.flexCol__cell2}>
                 <h2 className={styles.medium_title2}>Find Each Other</h2>
               </div>
               <h5 className={styles.highlights72}>
@@ -67,16 +71,16 @@ export default function Reusable42(props) {
               </h5>
             </div>
           </div>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <div className={styles.flexCol}>
-              <div className={styles.flexCol__item3}>
+              <div className={styles.flexCol__cell3}>
                 <Image
                   src={require('assets/3ab7e910268f7597cc4523488c9b0132.png')}
                   alt="alt text"
                   className={styles.icon13}
                 />
               </div>
-              <div className={styles.flexCol__item3}>
+              <div className={styles.flexCol__cell3}>
                 <h2 className={styles.medium_title3}>Collaborate</h2>
               </div>
               <h5 className={styles.highlights73}>

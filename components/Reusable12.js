@@ -1,12 +1,15 @@
 import cn from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
+<<<<<<< HEAD
+=======
 import React from 'react';
+>>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 
 import styles from './Reusable12.module.scss';
 
 export default function Reusable12(props) {
   return (
-    <div className={cn(styles.root, 'reusable12')}>
+    <div className={cn(styles.root, 'reusable12', "maxContent")}>
       <h1 className={styles.title}>My Collaborations</h1>
 
       <div className={styles.flexRow}>

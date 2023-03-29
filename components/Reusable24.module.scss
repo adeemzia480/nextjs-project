@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(107, 107, 109);
@@ -19,13 +19,15 @@ $font_type_0: 600 20px/1.55 "Poppins", Helvetica, Arial, serif;
 $font_type_1: 400 18px/1.5 "Poppins", Helvetica, Arial, serif;
 $font_type_2: 500 16px/1.93 "Poppins", Helvetica, Arial, serif;
 $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
+$font_type_4: 600 16px/1.55 "Poppins", Helvetica, Arial, serif;
 
 .wrapper10 {
   @include flex-column;
   padding: $padding_type_0;
   position: relative;
+  min-width: 320px;
 }
-.wrapper10__item {
+.wrapper10__cell {
   @include flex-column;
   position: relative;
   flex: 1 0 auto;
@@ -66,7 +68,7 @@ $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
   overflow: hidden;
   margin: 27px 0px 0px;
 }
-.box12__item {
+.box12__cell {
   @include flex-column;
   position: relative;
 }
@@ -354,13 +356,13 @@ $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 12.850190000000055px;
+  column-gap: 10px;
   width: 88.85%;
   position: relative;
   flex-grow: 1;
   margin: 24px auto;
 }
-.flexRow__item {
+.flexRow__cell {
   @include tn {
     flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
     min-width: unset;
@@ -372,7 +374,7 @@ $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
 .subtitle1 {
   @include v-center-content;
   justify-content: center;
-  font: $font_type_0;
+  font: $font_type_4;
   color: $color_type_0;
   text-align: center;
   letter-spacing: 0px;
@@ -380,7 +382,7 @@ $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
   margin: 9.85px 0px 6.15px;
 }
-.flexRow__item1 {
+.flexRow__cell1 {
   @include tn {
     flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
     min-width: unset;
@@ -389,16 +391,18 @@ $font_type_3: 400 16px/1.93 "Poppins", Helvetica, Arial, serif;
   position: relative;
 }
 .btn2 {
-  @include tn;
+  @include tn {
+    margin: 0px auto;
+  }
   @include flex-column;
   background-color: $color_type_3;
   border-radius: $border_radius_type_1;
-  width: fit-content;
+  width: 156px;
   height: auto;
   cursor: pointer;
   position: relative;
-  min-width: 0px;
-  margin: 0px auto;
+  min-width: 156px;
+  margin: 0px 0px;
 }
 .btn__text2 {
   @include mq-between(xxs, lg) {

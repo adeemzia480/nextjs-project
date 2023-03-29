@@ -1,4 +1,4 @@
-@use "components/utils" as *;
+@use "utils" as *;
 
 $color_type_0: rgb(0, 0, 0);
 $color_type_1: rgb(232, 241, 254);
@@ -22,6 +22,7 @@ $font_type_2: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
   outline: 2px solid rgb(230, 230, 230);
   outline-offset: -2px;
   position: relative;
+  margin-bottom: 20px;
 }
 .group {
   @include flex-column;

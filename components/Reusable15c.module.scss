@@ -1,0 +1,595 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(107, 107, 109);
+$color_type_2: rgb(232, 241, 254);
+$color_type_3: rgb(24, 26, 37);
+$color_type_4: rgb(255, 255, 255);
+$color_type_5: rgb(5, 105, 239);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+$border_radius_type_1: 23.5px 23.5px 23.5px 23.5px;
+$border_radius_type_2: 7px 7px 7px 7px;
+
+$font_type_0: 600 28px/1.42 "Poppins", Helvetica, Arial, serif;
+$font_type_1: 500 20px/2 "Poppins", Helvetica, Arial, serif;
+$font_type_2: 400 17px/1.82 "Poppins", Helvetica, Arial, serif;
+$font_type_3: 400 12px/3.33 "Poppins", Helvetica, Arial, serif;
+
+.section3 {
+  @include flex-column;
+  position: relative;
+  min-height: 382px;
+  min-width: 0px;
+  width: 100%;
+}
+.box {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: $border_radius_type_0;
+  outline: 1px solid rgb(227, 227, 227);
+  outline-offset: -1px;
+  height: auto;
+  box-shadow: 0px 10px 63px 0px rgba(0, 0, 0, 0.058);
+  position: relative;
+  overflow: hidden;
+  margin: 0px 4px 0px 0px;
+}
+.flexCol {
+  @include xs {
+    margin: 24px 9.54px 29px 14.54px;
+  }
+  @include flex-column;
+  flex-wrap: wrap;
+  position: relative;
+  flex-grow: 1;
+  margin: 24px 75.54px 29px;
+}
+// .title {
+//   @include v-center-content;
+//   @include font-face($font_type_0, $color_type_3, 0px);
+//   position: relative;
+// }
+
+.title {
+  @include lg {
+    font-size: 24px;
+    text-align: left;
+    margin: 32px 20px 0px;
+  }
+  @include md {
+    font-size: 20px;
+    margin: 32px 16px 0px;
+  }
+  @include xs {
+    font-size: 16px;
+  }
+  @include sm {
+    margin: 32px 12px 0px;
+  }
+  @include tn {
+    margin: 32px 8px 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  // margin: 32px 24px 0px;
+  margin-bottom: 30px;
+}
+
+.flexCol1 {
+  @include flex-column;
+  justify-content: flex-end;
+  position: relative;
+  margin: 27px 0px 0px;
+}
+.flexCol2 {
+  @include flex-column;
+  position: relative;
+  margin: 0px 3.92px 0px 0px;
+}
+.flexRow {
+  @include md {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.flexRow__cell {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 528px;
+}
+.flexCol3 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.flexRow1 {
+  @include md {
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+  }
+  @include xs {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.flexRow1__cell {
+  @include md {
+    flex: 1 1 369px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 369px;
+}
+.content_box {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect1 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 87.26%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 12.74% 0px 0%;
+}
+.flexRow1__spacer {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell1 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle1 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+}
+.flexRow__spacer {
+  @include md {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 116px;
+}
+.flexRow__cell1 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 570px;
+}
+.flexRow1__cell2 {
+  @include md {
+    flex: 1 1 411px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 411px;
+}
+.content_box3 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect2 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 37.47%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 61.8% 0px 0.73%;
+}
+.flexRow1__spacer1 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell3 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle11 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info1 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+  margin: 0px 3px;
+}
+.flexRow__cell2 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 528px;
+}
+.flexRow1__cell4 {
+  @include md {
+    flex: 1 1 369px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 369px;
+}
+.content_box1 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect3 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 68.29%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 31.71% 0px 0%;
+}
+.flexRow1__spacer2 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell5 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle12 {
+  @include xs {
+    margin: 0px;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info2 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+}
+.flexRow__spacer1 {
+  @include md {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 118px;
+}
+.flexRow__cell3 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 568px;
+}
+.flexRow1__cell6 {
+  @include md {
+    flex: 1 1 409px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 409px;
+}
+.content_box5 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect4 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 30.56%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 69.19% 0px 0.24%;
+}
+.flexRow1__spacer3 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell7 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle13 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info3 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+  margin: 0px 1px;
+}
+.flexRow__cell4 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 528px;
+}
+.flexRow1__cell8 {
+  @include md {
+    flex: 1 1 369px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 369px;
+}
+.content_box2 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect5 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 52.03%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 47.97% 0px 0%;
+}
+.flexRow1__spacer4 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell9 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle14 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info4 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+}
+.flexRow__spacer2 {
+  @include md {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 1 1 117px;
+}
+.flexRow__cell5 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 569px;
+}
+.flexRow1__cell10 {
+  @include md {
+    flex: 1 1 410px;
+    min-width: unset;
+  }
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 3;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 410px;
+}
+.content_box4 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  flex-grow: 1;
+  margin: 13px 0px;
+}
+.rect6 {
+  background-color: $color_type_5;
+  border-radius: $border_radius_type_2;
+  width: 21.22%;
+  position: relative;
+  flex-grow: 1;
+  min-height: 14px;
+  margin: 0px 78.29% 0px 0.49%;
+}
+.flexRow1__spacer5 {
+  @include xs {
+    display: none;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 1 24px;
+}
+.flexRow1__cell11 {
+  @include xs {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    order: 1;
+    min-width: unset;
+  }
+  @include flex-column;
+  position: relative;
+  flex: 0 0 135px;
+  min-width: 135px;
+}
+.subtitle15 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.info5 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_1, 0px);
+  position: relative;
+  margin: 0px 2px;
+}
+.flexCol1__cell {
+  @include flex-column;
+  position: relative;
+}
+.btn {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_1;
+  width: 136px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  min-width: 136px;
+  margin: 0px 0px 0px auto;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_5;
+  text-align: center;
+  letter-spacing: 0px;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  min-width: 0px;
+  margin: 8px 24px;
+}
