@@ -1,10 +1,6 @@
 import { Select } from 'antd';
 import cn from 'classnames';
 import Image from 'next/image';
-<<<<<<< HEAD
-=======
-import React from 'react';
->>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 
 import img01 from 'assets/70c1a184fa1adf012179f4c8bbb4a65b.png';
 import styles from './ReusableDashboard01.module.scss';

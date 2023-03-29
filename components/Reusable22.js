@@ -2,10 +2,6 @@ import { Input } from 'antd';
 
 import cn from 'classnames';
 import Image from 'next/image';
-<<<<<<< HEAD
-=======
-import React from 'react';
->>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 
 import styles from './Reusable22.module.scss';
 

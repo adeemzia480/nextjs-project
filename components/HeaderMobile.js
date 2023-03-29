@@ -1,10 +1,6 @@
 import cn from 'classnames';
 import LanguageChange from 'components/LanguageChange';
 import Image from 'next/image';
-<<<<<<< HEAD
-=======
-
->>>>>>> ad407e329f61c092f799ff82a8e6ee3fae44ca78
 import styles from './HeaderMobile.module.scss';
 
 const showMenu = () => {
