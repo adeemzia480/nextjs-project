@@ -22,15 +22,7 @@ export default function Reusable03(props) {
           />
         </div>
         <div className={styles.grid__cell}>
-          <div className={styles.box15}>
-            <div className={styles.box15__cell}>
-              <Image
-                src={require('assets/507cd6f4f8e88eebfbe5c332a452ae0b.png')}
-                alt="alt text"
-                className={styles.image13}
-              />
-            </div>
-          </div>
+          <Image src={require('assets/5a0114fe66921669757dbb31a17f4658.png')} alt="alt text" className={styles.img} />
         </div>
         <div className={styles.grid__cell}>
           <Image

@@ -248,10 +248,8 @@ $font_type_5: 400 14px/1 "Poppins", Helvetica, Arial, serif;
 }
 .input_box {
   @include v-center-content;
-  width: 100px;
   position: relative;
   flex-grow: 1;
-  min-width: 100px;
 }
 .content_box__cell1 {
   @include mq-between(xxl, max) {

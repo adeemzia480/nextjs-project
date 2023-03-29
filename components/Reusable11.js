@@ -1,25 +1,25 @@
 import cn from 'classnames';
-import Image from 'next/image';
 import PropTypes from 'prop-types';
 
+import Image from 'next/image';
 import styles from './Reusable11.module.scss';
 
 export default function Reusable11(props) {
   return (
     <div className={cn(styles.box, 'reusable11')}>
-      <div className={styles.box__item}>
+      <div className={styles.box__cell}>
         <Image src={props.image1} alt="alt text" className={styles.image1} />
       </div>
       <h3 className={styles.ad__type}>{props.ad__type}</h3>
 
       <div className={styles.list}>
-        <div className={styles.list__item}>
+        <div className={styles.list__cell}>
           <p className={styles.text}>Lorem sit</p>
         </div>
-        <div className={styles.list__item}>
+        <div className={styles.list__cell}>
           <p className={styles.text}>Lorem sit</p>
         </div>
-        <div className={styles.list__item}>
+        <div className={styles.list__cell}>
           <p className={styles.text}>Lorem sit</p>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Reusable11(props) {
 
       <div className={styles.flexCol}>
         <div className={styles.flexRow}>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <Image src={require('assets/371acf7039d52b19d107a79d39ef04f5.png')} alt="alt text" className={styles.icon} />
           </div>
           <h4 className={styles.highlights2_box}>
@@ -40,7 +40,7 @@ export default function Reusable11(props) {
         </div>
 
         <div className={styles.flexRow1}>
-          <div className={styles.flexRow1__item}>
+          <div className={styles.flexRow1__cell}>
             <Image src={require('assets/371acf7039d52b19d107a79d39ef04f5.png')} alt="alt text" className={styles.icon1} />
           </div>
           <h4 className={styles.highlights21_box}>
@@ -49,7 +49,7 @@ export default function Reusable11(props) {
         </div>
 
         <div className={styles.flexRow1}>
-          <div className={styles.flexRow1__item1}>
+          <div className={styles.flexRow1__cell1}>
             <Image src={require('assets/371acf7039d52b19d107a79d39ef04f5.png')} alt="alt text" className={styles.icon2} />
           </div>
           <h4 className={styles.highlights22_box}>
@@ -58,7 +58,7 @@ export default function Reusable11(props) {
         </div>
 
         <div className={styles.flexRow1}>
-          <div className={styles.flexRow1__item2}>
+          <div className={styles.flexRow1__cell2}>
             <Image src={require('assets/371acf7039d52b19d107a79d39ef04f5.png')} alt="alt text" className={styles.icon3} />
           </div>
           <h4 className={styles.highlights23_box}>
@@ -68,7 +68,7 @@ export default function Reusable11(props) {
       </div>
 
       <div className={styles.flex_row1}>
-        <div className={styles.flex_row1__item}>
+        <div className={styles.flex_row1__cell}>
           <button className={styles.btn} onClick={() => alert('It is clickable')}>
             <span className={styles.btn__text}>{props.btn__text}</span>
           </button>
@@ -76,8 +76,9 @@ export default function Reusable11(props) {
         <div className={styles.flex_row1__spacer} />
 
         <div className={styles.content_box}>
-          <div
-            style={{ '--src': `url(${require('assets/1a61e0e526884311e8d9ae7b1e3da316.png')})` }}
+          <Image
+            src={require('assets/1a61e0e526884311e8d9ae7b1e3da316.png')}
+            alt="alt text"
             className={styles.content_box1}
           />
           {props.like__filledShow && (

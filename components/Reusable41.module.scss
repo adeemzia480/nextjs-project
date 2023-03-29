@@ -28,9 +28,13 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
     font-size: 28px;
   }
   @include xs {
+    width: 70%;
+    margin: 0 auto;
     font-size: 24px;
   }
   @include tn {
+    width: 70%;
+    margin: 0 auto;
     font-size: 20px;
   }
   display: flex;
@@ -40,7 +44,7 @@ $font_type_0: 600 40px/1.72 "Poppins", Helvetica, Arial, serif;
   color: $color_type_0;
   text-align: center;
   letter-spacing: -0.2px;
-  width: 41.7%;
+  width: 100%;
   position: relative;
   margin: 0px 58.14% 0px 0.16%;
 }

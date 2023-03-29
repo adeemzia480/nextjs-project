@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import PrimaryBtn from 'components/PrimaryBtn';
 import Reusable28 from 'components/Reusable28';
-import React from 'react';
 
 import styles from './Reusable27.module.scss';
 
@@ -13,7 +12,7 @@ export default function Reusable27(props) {
 
         <div className={styles.wrapper1}>
           <div className={styles.wrapper2}>
-            <div className={styles.wrapper2__item}>
+            <div className={styles.wrapper2__cell}>
               <div className={styles.box}>
                 <Reusable28
                   highlights={`30 sec Ad`}
@@ -29,7 +28,7 @@ export default function Reusable27(props) {
                 />
               </div>
             </div>
-            <div className={styles.wrapper2__item}>
+            <div className={styles.wrapper2__cell}>
               <div className={styles.box1}>
                 <Reusable28
                   highlights={`30 sec Ad`}
@@ -45,7 +44,7 @@ export default function Reusable27(props) {
                 />
               </div>
             </div>
-            <div className={styles.wrapper2__item}>
+            <div className={styles.wrapper2__cell}>
               <div className={styles.box2}>
                 <Reusable28
                   highlights={`30 sec Ad`}

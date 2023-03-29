@@ -1,31 +1,28 @@
 import cn from 'classnames';
-import React from 'react';
 
-import img02 from 'assets/6b21b2ce9492450fd6fcb5d2809d028e.png';
-import img03 from 'assets/8a88b51e8d387b2063c4c28af1fd8924.png';
-import img01 from 'assets/fb596598be39b966beac6dcac49a7717.png';
-
+import Image from 'next/image';
 import styles from './Reusable003.module.scss';
 export default function Reusable003(props) {
   return (
     <div className={cn(styles.root, 'reusable003')}>
       <div className={styles.list}>
         <div className={styles.flexRow}>
-          <div className={styles.flexRow__item}>
+          <div className={styles.flexRow__cell}>
             <h1 className={styles.hero_title}>Find Influencers</h1>
           </div>
           <div className={styles.flexRow__spacer} />
-          <div className={styles.flexRow__item1}>
+          <div className={styles.flexRow__cell1}>
             <div className={styles.box2}>
-              <div className={styles.box2__item}>
+              <div className={styles.box2__cell}>
                 <div className={styles.input_box}>
                   <input className={styles.input} type={'text'} placeholder={`Search Influencers`} />
                 </div>
               </div>
               <div className={styles.box2__spacer} />
-              <div className={styles.box2__item1}>
-                <div
-                  style={{ '--src': `url(${img01.src})` }}
+              <div className={styles.box2__cell1}>
+                <Image
+                  src={require('assets/fb596598be39b966beac6dcac49a7717.png')}
+                  alt="alt text"
                   className={styles.image1}
                 />
               </div>
@@ -33,18 +30,20 @@ export default function Reusable003(props) {
           </div>
         </div>
 
-        <div className={styles.list__item}>
+        <div className={styles.list__cell}>
           <div className={styles.list1}>
-            <div className={styles.list1__item}>
+            <div className={styles.list1__cell}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -75,16 +74,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item}>
+            <div className={styles.list1__cell}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -115,16 +116,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -155,16 +158,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -195,16 +200,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -235,16 +242,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -275,16 +284,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 
@@ -315,16 +326,18 @@ export default function Reusable003(props) {
                 </div>
               </div>
             </div>
-            <div className={styles.list1__item1}>
+            <div className={styles.list1__cell1}>
               <div className={styles.box1}>
-                <div
-                  style={{ '--src': `url(${img02.src})` }}
+                <Image
+                  src={require('assets/6b21b2ce9492450fd6fcb5d2809d028e.png')}
+                  alt="alt text"
                   className={styles.box11}
                 />
 
                 <div className={styles.group}>
-                  <div
-                    style={{ '--src': `url(${img03.src})` }}
+                  <Image
+                    src={require('assets/8a88b51e8d387b2063c4c28af1fd8924.png')}
+                    alt="alt text"
                     className={styles.background}
                   />
 

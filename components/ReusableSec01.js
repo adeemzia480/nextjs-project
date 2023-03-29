@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import Reusable11 from 'components/Reusable11';
-
 import Image from 'next/image';
+
 import styles from './ReusableSec01.module.scss';
 
 export default function ReusableSec01(props) {

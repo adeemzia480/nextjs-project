@@ -34,6 +34,12 @@ $font_type_1: 14px/3 Arial, Helvetica, Arial, serif;
   @include lg {
     margin: 0px 12px;
   }
+  @include md {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 16px;
+  }
   @include sm {
     margin: 0px 8px;
   }
@@ -43,6 +49,10 @@ $font_type_1: 14px/3 Arial, Helvetica, Arial, serif;
   flex-grow: 1;
 }
 .flex_row__cell {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 0 339px;
@@ -78,11 +88,18 @@ $font_type_1: 14px/3 Arial, Helvetica, Arial, serif;
   @include mq-between(xl, xxl) {
     min-width: unset;
   }
+  @include md {
+    display: none;
+  }
   @include flex-column;
   position: relative;
   flex: 1 1 66px;
 }
 .flex_row__cell1 {
+  @include md {
+    flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
+    min-width: unset;
+  }
   @include flex-column;
   position: relative;
   flex: 0 1 863px;

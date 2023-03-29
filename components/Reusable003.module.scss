@@ -56,7 +56,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   flex: 1 1 1248px;
   margin: 0px 30px;
 }
-.flexRow__item {
+.flexRow__cell {
   @include md {
     flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
     min-width: unset;
@@ -88,10 +88,8 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   color: $color_type_1;
   text-align: center;
   letter-spacing: 0px;
-  width: fit-content;
   position: relative;
   flex-grow: 1;
-  min-width: 0px;
 }
 .flexRow__spacer {
   @include md {
@@ -101,7 +99,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 1 1 auto;
 }
-.flexRow__item1 {
+.flexRow__cell1 {
   @include md {
     flex: 0 0 calc(1 / 1 * 100% - 0px / 1);
     min-width: unset;
@@ -122,7 +120,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   min-width: 320px;
   margin: 8px 0px 7px;
 }
-.box2__item {
+.box2__cell {
   @include flex-column;
   position: relative;
   flex: 1 1 355.998642px;
@@ -148,7 +146,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 0 1 37px;
 }
-.box2__item1 {
+.box2__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 47px;
@@ -157,23 +155,22 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   width: 40px;
   height: auto;
   aspect-ratio: 1;
-  background: var(--src) center center / cover no-repeat;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
   position: relative;
   min-width: 40px;
   margin: 7px 7px 7px 0px;
 }
-.list__item {
+.list__cell {
   @include flex-column;
   position: relative;
 }
 .list1 {
-  @include sm {
-    justify-content: flex-start;
-    align-items: start;
-    column-gap: 16px;
-  }
   @include xxs {
     justify-content: center;
+    align-items: start;
+    column-gap: 16px;
   }
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +184,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
   margin: 0px 0px;
 }
-.list1__item {
+.list1__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 295px;
@@ -208,7 +205,10 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
 }
 .box11 {
   width: 295px;
-  background: var(--src) center center / cover no-repeat;
+  aspect-ratio: 0.78;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -221,11 +221,14 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   flex-grow: 1;
 }
 .background {
-  background: var(--src) center center / cover no-repeat;
+  width: 100%;
+  aspect-ratio: 0.78;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
   position: absolute;
   top: 0px;
   bottom: 0px;
-  min-height: 379px;
   left: 0px;
   right: 0px;
 }
@@ -343,7 +346,7 @@ $font_type_4: 400 14.434250831604004px/2.18 "Poppins", Helvetica, Arial, serif;
   position: relative;
   flex: 0 1 28px;
 }
-.list1__item1 {
+.list1__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 295px;

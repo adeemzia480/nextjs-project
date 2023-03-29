@@ -53,10 +53,14 @@ $font_type_2: 400 16px/1.87 "Raleway", Helvetica, Arial, serif;
   margin: 0px auto;
 }
 .group {
+  @include xs;
+  @include xxs {
+    margin: 60px 0px 0px 2px;
+  }
   @include flex-column;
   position: relative;
   min-height: 250px;
-  margin: 60px 53px 0px 85px;
+  margin: 60px 69px 0px;
 }
 .image4 {
   @include xl {

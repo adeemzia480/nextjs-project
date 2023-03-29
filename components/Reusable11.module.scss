@@ -33,7 +33,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   min-width: 0px;
   max-width: 409px;
 }
-.box__item {
+.box__cell {
   @include flex-column;
   position: relative;
 }
@@ -67,7 +67,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   position: relative;
   margin: 6px auto 0px;
 }
-.list__item {
+.list__cell {
   @include flex-column;
   position: relative;
   flex: 0 0 auto;
@@ -105,7 +105,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   column-gap: 20px;
   position: relative;
 }
-.flexRow__item {
+.flexRow__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 25px;
@@ -135,7 +135,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   position: relative;
   margin: 14px 0px 0px;
 }
-.flexRow1__item {
+.flexRow1__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 25px;
@@ -159,7 +159,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   min-width: 221px;
   margin: 2px 0px;
 }
-.flexRow1__item1 {
+.flexRow1__cell1 {
   @include flex-column;
   position: relative;
   flex: 0 1 25px;
@@ -183,7 +183,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   min-width: 77px;
   margin: 2px 0px;
 }
-.flexRow1__item2 {
+.flexRow1__cell2 {
   @include flex-column;
   position: relative;
   flex: 0 1 25px;
@@ -212,7 +212,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   position: relative;
   margin: 17px 30px 22px;
 }
-.flex_row1__item {
+.flex_row1__cell {
   @include flex-column;
   position: relative;
   flex: 0 1 179px;
@@ -221,11 +221,11 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   @include flex-column;
   background-color: $color_type_4;
   border-radius: $border_radius_type_1;
-  width: fit-content;
+  width: 179px;
   height: auto;
   cursor: pointer;
   position: relative;
-  min-width: 0px;
+  min-width: 179px;
 }
 .btn__text {
   @include v-center-content;
@@ -238,7 +238,7 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
   height: auto;
   position: relative;
   min-width: 0px;
-  margin: 8px 24px;
+  margin: 8px auto;
 }
 .flex_row1__spacer {
   @include flex-column;
@@ -254,7 +254,10 @@ $font_type_5: 400 14px/1.14 "Roboto", Helvetica, Arial, serif;
 .content_box1 {
   width: 32.32px;
   height: 28.46px;
-  background: var(--src) center center / cover no-repeat;
+  aspect-ratio: 1.14;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
   position: absolute;
   top: 0px;
   left: 0px;

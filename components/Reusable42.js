@@ -1,6 +1,6 @@
 import cn from 'classnames';
-
 import Image from 'next/image';
+
 import styles from './Reusable42.module.scss';
 
 export default function Reusable42(props) {

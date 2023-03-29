@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import Image from 'next/image';
 
+import Image from 'next/image';
 import styles from './Footer.module.scss';
 
 export default function Footer(props) {
@@ -16,7 +16,7 @@ export default function Footer(props) {
                 className={styles.image1}
               />
             </div>
-            <h3 className={styles.subtitle}>Creator Marketplace</h3>
+            <h3 className={styles.subtitle}>Creator Marketplace</h3>
           </div>
 
           <h5 className={styles.highlights1}>

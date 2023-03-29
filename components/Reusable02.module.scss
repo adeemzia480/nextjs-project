@@ -28,6 +28,12 @@ $font_type_2: 400 16px/1.75 "Poppins", Helvetica, Arial, serif;
     gap: 1rem;
     flex-direction: column;
   }
+  @include sm {
+    margin: 90px 32px 0px;
+  }
+  @include tn {
+    margin: 90px 16px 0px;
+  }
   display: flex;
   align-items: center;
   column-gap: 50px;
